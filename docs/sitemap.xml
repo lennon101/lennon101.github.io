@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lennon101.github.io/categories/</loc>
+    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
+  </url><url>
+    <loc>https://lennon101.github.io/categories/markdown/</loc>
+    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
+  </url><url>
     <loc>https://lennon101.github.io/posts/markdown-test/</loc>
     <lastmod>2024-05-02T11:02:11+10:00</lastmod>
   </url><url>
     <loc>https://lennon101.github.io/posts/</loc>
     <lastmod>2024-05-02T11:02:11+10:00</lastmod>
   </url><url>
+    <loc>https://lennon101.github.io/tags/</loc>
+    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
+  </url><url>
+    <loc>https://lennon101.github.io/tags/testing/</loc>
+    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
+  </url><url>
+    <loc>https://lennon101.github.io/categories/testing/</loc>
+    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
+  </url><url>
     <loc>https://lennon101.github.io/</loc>
+    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
+  </url><url>
+    <loc>https://lennon101.github.io/tags/troubleshooting/</loc>
     <lastmod>2024-05-02T11:02:11+10:00</lastmod>
   </url><url>
     <loc>https://lennon101.github.io/posts/my-first-post/</loc>
@@ -38,10 +56,6 @@
     <loc>https://lennon101.github.io/search/_index.zh-cn/</loc>
     <priority>0.1</priority>
   </url><url>
-    <loc>https://lennon101.github.io/categories/</loc>
-  </url><url>
     <loc>https://lennon101.github.io/series/</loc>
-  </url><url>
-    <loc>https://lennon101.github.io/tags/</loc>
   </url>
 </urlset>
