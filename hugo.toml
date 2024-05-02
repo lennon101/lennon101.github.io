@@ -1,0 +1,6 @@
+baseURL = 'https://lennon101.github.io/'
+languageCode = 'en-us'
+title = 'The Lennons Wiki'
+paginate = 10
+theme = "tailwind"
+publishDir = "docs"
