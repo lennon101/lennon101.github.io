@@ -4,3 +4,8 @@ title = 'The Lennons Wiki'
 paginate = 10
 theme = "tailwind"
 publishDir = "docs"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
