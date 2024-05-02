@@ -6,14 +6,21 @@
     <description>Recent content on The Lennons Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2024 10:06:07 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2024 11:02:11 +1000</lastBuildDate>
     <atom:link href="https://lennon101.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hi Jakob</title>
+      <title>Markdown Test</title>
+      <link>https://lennon101.github.io/posts/markdown-test/</link>
+      <pubDate>Thu, 02 May 2024 11:02:11 +1000</pubDate>
+      <guid>https://lennon101.github.io/posts/markdown-test/</guid>
+      <description>Markdown Syntax Examples A Subheadings Emphasis Bold Text&#xA;Italic Text&#xA;Lists Ordered List Item 1 Ordered List Item 2 Subitem 1 Subitem 2 Unordered List Item 1 Unordered List Item 2 Links and Images OpenAI&#xD;Blockquotes This is a blockquote.&#xA;Horizontal Rule Code Blocks C++ Code Block #include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world!&amp;#34; &amp;lt;&amp;lt; std::endl; return 0; } Python Code Block def greet(name): print(f&amp;#34;Hello, {name}!&amp;#34;) greet(&amp;#34;Alice&amp;#34;) </description>
+    </item>
+    <item>
+      <title>My first blog post</title>
       <link>https://lennon101.github.io/posts/my-first-post/</link>
       <pubDate>Thu, 02 May 2024 10:06:07 +1000</pubDate>
       <guid>https://lennon101.github.io/posts/my-first-post/</guid>
-      <description>This is heading 1 hey there, this is some text&#xA;this is a heading 2 # this is some python code # Import necessary libraries/modules import os import sys # Define main function def main(): # Your code here # Entry point of the program if __name__ == &amp;#34;__main__&amp;#34;: main() </description>
+      <description>Hi Jakob hey there, this is some text. The below is all written in markdown.&#xA;Section 1 Section 2 Section 3: some python code # this is some python code # Import necessary libraries/modules import os import sys # Define main function def main(): # Your code here # Entry point of the program if __name__ == &amp;#34;__main__&amp;#34;: main() </description>
     </item>
     <item>
       <title></title>

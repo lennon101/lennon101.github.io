@@ -1,13 +1,15 @@
 +++
-title = 'Hi Jakob'
+title = 'My first blog post'
 date = 2024-05-02T10:06:07+10:00
 draft = false
 +++
 
-# This is heading 1
-hey there, this is some text 
+# Hi Jakob 
+hey there, this is some text. The below is all written in markdown. 
 
-## this is a heading 2 
+## Section 1
+## Section 2 
+## Section 3: some python code
 
 ```python 
 # this is some python code 
