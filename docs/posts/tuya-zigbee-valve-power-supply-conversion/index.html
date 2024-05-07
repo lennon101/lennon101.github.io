@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Tuya Zigbee Valve Power Supply Conversion :: The Lennons Wiki - Example site for hugo-theme-tailwind</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide Introduction This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step by step.
+Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water ControllerTable of Contents Introduction Why Upgrade to Regulated Power Supply?"
+/>
+<meta
+  name="keywords"
+  content="hugo, tailwind, tailwindcss, hugo theme, hugo theme tailwind"
+/>
+<meta name="robots" content="noodp" />
+<meta property="og:url" content="http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/">
+  <meta property="og:site_name" content="The Lennons Wiki">
+  <meta property="og:title" content="Tuya Zigbee Valve Power Supply Conversion">
+  <meta property="og:description" content="Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide Introduction This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I’ll walk you through the process, step by step.
+Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water ControllerTable of Contents Introduction Why Upgrade to Regulated Power Supply?">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-07T16:05:21+10:00">
+    <meta property="article:modified_time" content="2024-05-07T16:05:21+10:00">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Tuya Zigbee Valve Power Supply Conversion">
+<meta name="twitter:description" content="Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide Introduction This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I&rsquo;ll walk you through the process, step by step.
+Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water ControllerTable of Contents Introduction Why Upgrade to Regulated Power Supply?">
+
+
+<link rel="canonical" href="http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/" />
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/css/index.e35987a77152345c1efaebd6ce6240488de0f6d5a0c1d19a843ff32bba9f70bb.css">
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+</head>
+<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800">
+    
+<div class="fixed right-0 top-0 z-50 flex items-center justify-center bg-gray-200 p-2 text-sm uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
+  <span class="block sm:hidden">all</span>
+  <span class="hidden sm:block md:hidden">sm</span>
+  <span class="hidden md:block lg:hidden">md</span>
+  <span class="hidden lg:block xl:hidden">lg</span>
+  <span class="hidden xl:block 2xl:hidden">xl</span>
+  <span class="hidden 2xl:block">2xl</span>
+</div>
+
+  <header class="flex flex-none justify-center z-10">
+    <div class="flex flex-row gap justify-between w-full max-w-4xl lg:max-w-5xl h-12 mt-3">
+  <div class="flex-none ml-2 md:ml-0">
+    <a href="/" class="">
+      <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://placehold.co/512/webp" alt="logo">
+    </a>
+  </div>
+  <div class="flex-1"></div>
+  <div class="flex-none">
+    
+
+
+
+
+  </div>
+  
+  <div class="flex-none mx-1"></div>
+  
+  <div class="flex-none md:hidden">
+    <a href=/search/ class="inline-flex items-center p-2 text-sm text-slate-800 dark:text-slate-200 rounded-lg" aria-controls="navbar-menu" aria-expanded="false">
+      <span class="sr-only">Search</span>
+      <i class="w-8 h-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+    <path d="M21 21l-6 -6" />
+</svg>
+
+      </i>
+    </a>
+  </div>
+  <div class="darkmode-toggle flex flex-none mr-2 md:mr-0">
+    <label for="darkmode-toggle" class="flex items-center px-3 cursor-pointer rounded-full bg-gray-100 dark:bg-gray-600" title="Toggle dark mode">
+      <input name="darkmode-toggle" id="darkmode-toggle" type="checkbox" class="sr-only peer" aria-label="Toggle dark mode">
+      <div class="group flex flex-row gap-1 justify-center h-8 px-1 rounded-full bg-white dark:bg-gray-700">
+        <i class="h-6 w-6 flex-none rounded-full bg-yellow-400 place-self-center peer-checked:group-[]:invisible">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+   <path d="M12 5l0 .01"></path>
+   <path d="M17 7l0 .01"></path>
+   <path d="M19 12l0 .01"></path>
+   <path d="M17 17l0 .01"></path>
+   <path d="M12 19l0 .01"></path>
+   <path d="M7 17l0 .01"></path>
+   <path d="M5 12l0 .01"></path>
+   <path d="M7 7l0 .01"></path>
+</svg>
+
+        </i>
+        <i class="h-6 w-6 flex-none rounded-full place-self-center invisible peer-checked:group-[]:visible">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+   <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path>
+   <path d="M19 11h2m-1 -1v2"></path>
+</svg>
+
+        </i>
+      </div>
+    </label>
+  </div>
+</div>
+
+  </header>
+  <main class="flex flex-auto justify-center">
+    
+<div class="w-full max-w-4xl lg:max-w-5xl">
+  <div class="flex flex-col mt-6 mx-2 md:mx-0 rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-700">
+    <div>
+      <a href="/posts/tuya-zigbee-valve-power-supply-conversion/">
+        
+      </a>
+    </div>
+    <div class="flex flex-col gap-y-3 p-6">
+      <h1 class="text-4xl font-semibold text-slate-800 dark:text-slate-100">
+        <a href="/posts/tuya-zigbee-valve-power-supply-conversion/">Tuya Zigbee Valve Power Supply Conversion</a>
+      </h1>
+
+      
+      
+
+
+      <div class="flex flex-col gap-y-1 md:flex-row md:gap-y-0 md:gap-x-4 text-slate-500 dark:text-slate-300">
+  
+  
+  <div class="flex flex-row text-base gap-x-1">
+    <i class="h-6 w-6 flex-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path>
+   <path d="M16 3v4"></path>
+   <path d="M8 3v4"></path>
+   <path d="M4 11h16"></path>
+   <path d="M11 15h1"></path>
+   <path d="M12 15v3"></path>
+</svg>
+
+    </i>
+    <time datetime="2024-05-07T16:05:21&#43;10:00">
+      2024-05-07
+    </time>
+  </div>
+
+  <div class="flex flex-row text-base gap-x-1">
+    <i class="h-6 w-6 flex-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hourglass-high" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M6.5 7h11"></path>
+   <path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z"></path>
+   <path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z"></path>
+</svg>
+
+    </i>
+    <span>
+      4 minutes to read
+    </span>
+  </div>
+</div>
+
+
+      
+        
+        <section class="prose prose-slate dark:prose-invert w-full max-w-4xl lg:max-w-5xl mt-6">
+          <h2>Table of Contents</h2>
+          <aside><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#why-upgrade-to-regulated-power-supply">Why Upgrade to Regulated Power Supply?</a></li>
+    <li><a href="#understanding-zigbee-irrigation-valves">Understanding Zigbee Irrigation Valves</a>
+      <ul>
+        <li><a href="#current-amps-requirement">Current (amps) requirement:</a></li>
+      </ul>
+    </li>
+    <li><a href="#materials-needed">Materials Needed</a></li>
+    <li><a href="#step-by-step-process">Step-by-Step Process</a>
+      <ul>
+        <li><a href="#51-disassembling-the-device">5.1 Disassembling the device</a></li>
+        <li><a href="#52-wiring-diagram">5.2 wiring diagram</a></li>
+        <li><a href="#53-selecting-a-regulated-power-supply">5.3 Selecting a Regulated Power Supply</a></li>
+        <li><a href="#54-modifying-the-valve-circuit">5.4 Modifying the Valve Circuit</a></li>
+        <li><a href="#55-assembling-the-system">5.5 Assembling the System</a></li>
+      </ul>
+    </li>
+    <li><a href="#testing-the-upgraded-system">Testing the Upgraded System</a></li>
+    <li><a href="#benefits-of-regulated-power-supply">Benefits of Regulated Power Supply</a></li>
+    <li><a href="#troubleshooting-tips">Troubleshooting Tips</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
+  </ul>
+</nav></aside>
+        </section>
+        
+      
+
+      <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
+        <h1 id="converting-zigbee-irrigation-valves-from-battery-to-regulated-power-supply-a-step-by-step-guide">Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I&rsquo;ll walk you through the process, step by step.</p>
+<p><a href="https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y" target="_blank" rel="noopener">Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller</a>
+</p>
+<!-- raw HTML omitted -->
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><strong>Introduction</strong></li>
+<li><strong>Why Upgrade to Regulated Power Supply?</strong></li>
+<li><strong>Understanding Zigbee Irrigation Valves</strong></li>
+<li><strong>Materials Needed</strong></li>
+<li><strong>Step-by-Step Conversion Process</strong>
+<ul>
+<li>5.1 Disassembling the Valve</li>
+<li>5.2 Identifying Power Requirements</li>
+<li>5.3 Selecting a Regulated Power Supply</li>
+<li>5.4 Modifying the Valve Circuit</li>
+<li>5.5 Assembling the System</li>
+</ul>
+</li>
+<li><strong>Testing the Upgraded System</strong></li>
+<li><strong>Benefits of Regulated Power Supply</strong></li>
+<li><strong>Troubleshooting Tips</strong></li>
+<li><strong>Conclusion</strong></li>
+<li><strong>Additional Resources</strong></li>
+</ol>
+<h2 id="why-upgrade-to-regulated-power-supply">Why Upgrade to Regulated Power Supply?</h2>
+<p>This was in response to the batteries of these devices draining very quickly and requiring frequent replacements. Upgrading to a regulated power supply ensures a stable and continuous power source, reducing the need for constant maintenance and enhancing the overall reliability of your Zigbee irrigation system.</p>
+<h2 id="understanding-zigbee-irrigation-valves">Understanding Zigbee Irrigation Valves</h2>
+<p>Before diving into the conversion process, it&rsquo;s essential to have a basic understanding of how Zigbee irrigation valves work and the power requirements associated with them.
+Each device is powered by 4x AA batteries in series. Each AA battery is 1.5V at 100%, therefore, the total voltage needed for this device is:</p>
+<p><code>total voltage = 4 x 1.5V</code></p>
+<p>Therefore:
+<code>total voltage = 6v</code></p>
+<h3 id="current-amps-requirement">Current (amps) requirement:</h3>
+<p>At this stage, I am not aware of the current requirement of these devices, but a typical AA battery has a supply peak currents of over 2A. But I know (just from my own experience) that these zigbee devices won&rsquo;t be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous).</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ol>
+<li>An AC to DC power supply with atleast 6v and 1amp output. A typical looking power supply is pictured below,</li>
+<li>A linear regulator - only needed if you your power supply has an output greater than 6v. A good example is the LM317 Adjustable Voltage Regulator Power Supply (see image below). Just go to AliExpress and search <code>LM317 Breakout Board</code>. An example is shown below.</li>
+<li>A small plastic container to store the linear regulator in (if you need one).</li>
+<li>A multimetre to check the voltage</li>
+</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="step-by-step-process">Step-by-Step Process</h2>
+<h3 id="51-disassembling-the-device">5.1 Disassembling the device</h3>
+<p>Begin the conversion process by carefully disassembling the Zigbee irrigation valve. Take note of the existing components and their placements.</p>
+<h3 id="52-wiring-diagram">5.2 wiring diagram</h3>
+<!-- raw HTML omitted -->
+<h3 id="53-selecting-a-regulated-power-supply">5.3 Selecting a Regulated Power Supply</h3>
+<p>Explore different regulated power supply options and select the one that best fits your requirements. Consider factors such as voltage, current, and environmental suitability.</p>
+<h3 id="54-modifying-the-valve-circuit">5.4 Modifying the Valve Circuit</h3>
+<p>Learn how to modify the valve circuit to accommodate the regulated power supply. This step may involve rewiring and integrating the new power source seamlessly.</p>
+<h3 id="55-assembling-the-system">5.5 Assembling the System</h3>
+<p>Put everything back together, ensuring all components are properly connected. Follow a systematic approach to avoid any issues during the assembly.</p>
+<h2 id="testing-the-upgraded-system">Testing the Upgraded System</h2>
+<p>After the conversion, thoroughly test the system to ensure that it functions as expected. Address any issues that may arise during the testing phase.</p>
+<h2 id="benefits-of-regulated-power-supply">Benefits of Regulated Power Supply</h2>
+<p>Explore the advantages of upgrading to a regulated power supply, including increased reliability, reduced maintenance costs, and improved overall performance.</p>
+<h2 id="troubleshooting-tips">Troubleshooting Tips</h2>
+<p>In case you encounter any issues during or after the conversion, refer to our troubleshooting tips to identify and resolve potential problems.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Summarize the key points discussed in the blog post and emphasize the benefits of upgrading Zigbee irrigation valves to a regulated power supply.</p>
+<h2 id="additional-resources">Additional Resources</h2>
+<p>Provide links to relevant resources, such as recommended power supplies, circuit diagrams, and related articles, to further assist readers in their conversion journey.</p>
+
+      </article>
+
+      
+
+
+
+
+    </div>
+  </div>
+</div>
+
+  </main>
+  <footer class="flex flex-none justify-center">
+    <section class="flex flex-col md:flex-row mx-2 md:mx-0 gap-2 md:gap-0 justify-between w-full max-w-4xl lg:max-w-5xl py-6 text-slate-500 dark:text-slate-300">
+  <div class="flex flex-row">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+  <div class="grow"></div>
+  <div class="flex flex-row">
+    <i class="h-6 w-6 flex-none"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+   <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173"></path>
+</svg>
+</i> 2023 - 2024 
+    
+  </div>
+  
+  <div class="flex flex-row">
+    <span class="ml-0 pl-0 md:ml-2 md:pl-2 border-l-0 md:border-l border-slate-300 dark:border-slate-400">
+      Powered by <a href="https://gohugo.io" target="_blank" rel="noopener" class="underline">Hugo</a> <span class="text-red-600">&hearts;</span> <a href="https://github.com/tomowang/hugo-theme-tailwind" target="_blank" rel="noopener" class="underline">Tailwind</a>
+    </span>
+  </div>
+  
+</section>
+
+  </footer>
+  <script src="/main.js"></script>
+
+
+
+
+</body>
+</html>
