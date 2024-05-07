@@ -13,36 +13,36 @@ This is a short blog post about converting Zigbee irrigation valves (pictured be
 
 [Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller](https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y)
 
-![tuya-zigbee-valve-controller](/static/tuya-zigbee-valve-controller.png)
-
-<img src="https://github.com/lennon101/blogs/assets/1709944/359a96d9-2ffc-48d4-a4be-6a1f232272ed" width="200">
-
+{{< figure src="/tuya-zigbee-valve-controller.png" width="300" >}}
 
 ## Why Upgrade to Regulated Power Supply?
 This was in response to the batteries of these devices draining very quickly and requiring frequent replacements. Upgrading to a regulated power supply ensures a stable and continuous power source, reducing the need for constant maintenance and enhancing the overall reliability of your Zigbee irrigation system.
 
-## Understanding Zigbee Irrigation Valves
+## Calculating the voltage required 
 Before diving into the conversion process, it's essential to have a basic understanding of how Zigbee irrigation valves work and the power requirements associated with them. 
 Each device is powered by 4x AA batteries in series. Each AA battery is 1.5V at 100%, therefore, the total voltage needed for this device is:
 
-`total voltage = 4 x 1.5V` 
+``` 
+total voltage = 4 x 1.5V
+```
 
 Therefore: 
-`total voltage = 6v` 
+```
+total voltage = 6v
+```
 
 ### Current (amps) requirement: 
-At this stage, I am not aware of the current requirement of these devices, but a typical AA battery has a supply peak currents of over 2A. But I know (just from my own experience) that these zigbee devices won't be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous). 
+A typical AA battery has a peak current of over 2A. But I know (just from my own experience) that these zigbee devices won't be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous). 
 
 ## Materials Needed
-1. An AC to DC power supply with atleast 6v and 1amp output. A typical looking power supply is pictured below,
+1. An AC to DC power supply with atleast 6v and 1amp output. A typical looking power supply is pictured below
+{{< figure src="/power-supply.png" width="200" >}}
+
 2. A linear regulator - only needed if you your power supply has an output greater than 6v. A good example is the LM317 Adjustable Voltage Regulator Power Supply (see image below). Just go to AliExpress and search `LM317 Breakout Board`. An example is shown below. 
+{{< figure src="/lm317.png" width="100" >}}
+
 3. A small plastic container to store the linear regulator in (if you need one). 
 4. A multimetre to check the voltage 
-
-<img src="https://github.com/lennon101/blogs/assets/1709944/98392c22-187b-40c4-8111-9f88e4b1f851" width="300">
-
-<img src="https://github.com/lennon101/blogs/assets/1709944/cb2020f6-52a5-416d-a75a-bd8d5d5f5ef8" width="200">
-
 
 
 ## Step-by-Step Process
@@ -51,7 +51,7 @@ At this stage, I am not aware of the current requirement of these devices, but a
 Begin the conversion process by carefully disassembling the Zigbee irrigation valve. Take note of the existing components and their placements.
 
 ### 5.2 wiring diagram
-<img src= "https://github.com/lennon101/blogs/assets/1709944/d3f62dcc-7176-4edd-811e-4bba564ccdfe" width="500">
+{{< figure src="/modified-power-supply.png" width="700" >}}
 
 
 ### 5.3 Selecting a Regulated Power Supply

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <title>Tuya Zigbee Valve Power Supply Conversion :: The Lennons Wiki - Example site for hugo-theme-tailwind</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -15,7 +15,7 @@ Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in
   content="hugo, tailwind, tailwindcss, hugo theme, hugo theme tailwind"
 />
 <meta name="robots" content="noodp" />
-<meta property="og:url" content="http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/">
+<meta property="og:url" content="https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/">
   <meta property="og:site_name" content="The Lennons Wiki">
   <meta property="og:title" content="Tuya Zigbee Valve Power Supply Conversion">
   <meta property="og:description" content="Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide Introduction This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I’ll walk you through the process, step by step.
@@ -34,10 +34,10 @@ Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in
 Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water ControllerWhy Upgrade to Regulated Power Supply?">
 
 
-<link rel="canonical" href="http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/" />
+<link rel="canonical" href="https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/" />
 
 <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/css/index.e35987a77152345c1efaebd6ce6240488de0f6d5a0c1d19a843ff32bba9f70bb.css">
+<link rel="stylesheet" href="/css/index.min.5d96433bd17079764d5a8866addd6d7848ea8295977a06688f43c5be97af544e.css">
 
 
 
@@ -52,18 +52,7 @@ Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in
 
   
 </head>
-<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800">
-    
-<div class="fixed right-0 top-0 z-50 flex items-center justify-center bg-gray-200 p-2 text-sm uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
-</div>
-
-  <header class="flex flex-none justify-center z-10">
+<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800"><header class="flex flex-none justify-center z-10">
     <div class="flex flex-row gap justify-between w-full max-w-4xl lg:max-w-5xl h-12 mt-3">
   <div class="flex-none ml-2 md:ml-0">
     <a href="/" class="">
@@ -259,7 +248,7 @@ Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#why-upgrade-to-regulated-power-supply">Why Upgrade to Regulated Power Supply?</a></li>
-    <li><a href="#understanding-zigbee-irrigation-valves">Understanding Zigbee Irrigation Valves</a>
+    <li><a href="#calculating-the-voltage-required">Calculating the voltage required</a>
       <ul>
         <li><a href="#current-amps-requirement">Current (amps) requirement:</a></li>
       </ul>
@@ -291,39 +280,47 @@ Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in
 <p>This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I&rsquo;ll walk you through the process, step by step.</p>
 <p><a href="https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y" target="_blank" rel="noopener">Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller</a>
 </p>
-<p><div class="not-prose">
-<figure>
-    <img src="/static/tuya-zigbee-valve-controller.png"
-      alt="tuya-zigbee-valve-controller" 
-      loading="lazy"
-    >
-  </figure></div>
-</p>
-<!-- raw HTML omitted -->
+<figure><img src="/posts/tuya-zigbee-valve-power-supply-conversion/tuya-zigbee-valve-controller.png" width="300">
+</figure>
+
 <h2 id="why-upgrade-to-regulated-power-supply">Why Upgrade to Regulated Power Supply?</h2>
 <p>This was in response to the batteries of these devices draining very quickly and requiring frequent replacements. Upgrading to a regulated power supply ensures a stable and continuous power source, reducing the need for constant maintenance and enhancing the overall reliability of your Zigbee irrigation system.</p>
-<h2 id="understanding-zigbee-irrigation-valves">Understanding Zigbee Irrigation Valves</h2>
+<h2 id="calculating-the-voltage-required">Calculating the voltage required</h2>
 <p>Before diving into the conversion process, it&rsquo;s essential to have a basic understanding of how Zigbee irrigation valves work and the power requirements associated with them.
 Each device is powered by 4x AA batteries in series. Each AA battery is 1.5V at 100%, therefore, the total voltage needed for this device is:</p>
-<p><code>total voltage = 4 x 1.5V</code></p>
-<p>Therefore:
-<code>total voltage = 6v</code></p>
-<h3 id="current-amps-requirement">Current (amps) requirement:</h3>
-<p>At this stage, I am not aware of the current requirement of these devices, but a typical AA battery has a supply peak currents of over 2A. But I know (just from my own experience) that these zigbee devices won&rsquo;t be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous).</p>
+<pre tabindex="0"><code>total voltage = 4 x 1.5V
+</code></pre><p>Therefore:</p>
+<pre tabindex="0"><code>total voltage = 6v
+</code></pre><h3 id="current-amps-requirement">Current (amps) requirement:</h3>
+<p>A typical AA battery has a peak current of over 2A. But I know (just from my own experience) that these zigbee devices won&rsquo;t be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous).</p>
 <h2 id="materials-needed">Materials Needed</h2>
 <ol>
-<li>An AC to DC power supply with atleast 6v and 1amp output. A typical looking power supply is pictured below,</li>
-<li>A linear regulator - only needed if you your power supply has an output greater than 6v. A good example is the LM317 Adjustable Voltage Regulator Power Supply (see image below). Just go to AliExpress and search <code>LM317 Breakout Board</code>. An example is shown below.</li>
-<li>A small plastic container to store the linear regulator in (if you need one).</li>
-<li>A multimetre to check the voltage</li>
+<li>
+<p>An AC to DC power supply with atleast 6v and 1amp output. A typical looking power supply is pictured below
+<figure><img src="/posts/tuya-zigbee-valve-power-supply-conversion/power-supply.png" width="200">
+</figure>
+</p>
+</li>
+<li>
+<p>A linear regulator - only needed if you your power supply has an output greater than 6v. A good example is the LM317 Adjustable Voltage Regulator Power Supply (see image below). Just go to AliExpress and search <code>LM317 Breakout Board</code>. An example is shown below.
+<figure><img src="/posts/tuya-zigbee-valve-power-supply-conversion/lm317.png" width="100">
+</figure>
+</p>
+</li>
+<li>
+<p>A small plastic container to store the linear regulator in (if you need one).</p>
+</li>
+<li>
+<p>A multimetre to check the voltage</p>
+</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 <h2 id="step-by-step-process">Step-by-Step Process</h2>
 <h3 id="51-disassembling-the-device">5.1 Disassembling the device</h3>
 <p>Begin the conversion process by carefully disassembling the Zigbee irrigation valve. Take note of the existing components and their placements.</p>
 <h3 id="52-wiring-diagram">5.2 wiring diagram</h3>
-<!-- raw HTML omitted -->
+<figure><img src="/posts/tuya-zigbee-valve-power-supply-conversion/modified-power-supply.png" width="700">
+</figure>
+
 <h3 id="53-selecting-a-regulated-power-supply">5.3 Selecting a Regulated Power Supply</h3>
 <p>Explore different regulated power supply options and select the one that best fits your requirements. Consider factors such as voltage, current, and environmental suitability.</p>
 <h3 id="54-modifying-the-valve-circuit">5.4 Modifying the Valve Circuit</h3>
@@ -391,7 +388,28 @@ Each device is powered by 4x AA batteries in series. Each AA battery is 1.5V at 
 </section>
 
   </footer>
-  <script src="/main.js"></script>
+  <script src="/main.min.c6372b6836971865bd94bfde974748aca8415824a2facab6ccd66a87384bfacb.js"></script>
+
+<div class="hidden top-1 right-1" id="code-copy">
+  <i class="h-6 w-6 block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+  <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+</svg>
+
+  </i>
+</div>
+<div class="hidden top-1 right-1" id="code-copy-done">
+  <i class="h-6 w-6 block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M5 12l5 5l10 -10" />
+</svg>
+
+  </i>
+</div><script src="/code-copy.min.4be95a7068ec721962fd0df64ce1c8673df8035fde465874f1e6e67e2aac7f71.js"></script>
+
 
 
 
