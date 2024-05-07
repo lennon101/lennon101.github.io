@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT on The Lennons Wiki</title>
+    <link>http://localhost:1313/categories/iot/</link>
+    <description>Recent content in IoT on The Lennons Wiki</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 May 2024 16:05:21 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/iot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tuya Zigbee Valve Power Supply Conversion</title>
+      <link>http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/</link>
+      <pubDate>Tue, 07 May 2024 16:05:21 +1000</pubDate>
+      <guid>http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/</guid>
+      <description>Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide Introduction This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step by step.&#xA;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&#xD;Table of Contents Introduction Why Upgrade to Regulated Power Supply?</description>
+    </item>
+  </channel>
+</rss>

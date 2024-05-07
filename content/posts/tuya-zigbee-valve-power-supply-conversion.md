@@ -1,7 +1,9 @@
 +++
 title = 'Tuya Zigbee Valve Power Supply Conversion'
 date = 2024-05-07T16:05:21+10:00
-draft = true
+draft = false
+categories = ['IoT']
+tags = ['zigbee', 'fw', 'how-to']
 +++
 
 # Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide

@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-05-07T16:05:21+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fw/</loc>
+    <lastmod>2024-05-07T16:05:21+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/how-to/</loc>
+    <lastmod>2024-05-07T16:05:21+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/iot/</loc>
+    <lastmod>2024-05-07T16:05:21+10:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-07T16:05:21+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-07T16:05:21+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
@@ -11,16 +26,13 @@
     <loc>http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/</loc>
     <lastmod>2024-05-07T16:05:21+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
+    <loc>http://localhost:1313/tags/zigbee/</loc>
+    <lastmod>2024-05-07T16:05:21+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/markdown/</loc>
     <lastmod>2024-05-02T11:02:11+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/markdown-test/</loc>
-    <lastmod>2024-05-02T11:02:11+10:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-02T11:02:11+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/testing/</loc>
