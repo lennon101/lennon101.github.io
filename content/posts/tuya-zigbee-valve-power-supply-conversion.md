@@ -13,25 +13,10 @@ This is a short blog post about converting Zigbee irrigation valves (pictured be
 
 [Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller](https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y)
 
+![tuya-zigbee-valve-controller](/static/tuya-zigbee-valve-controller.png)
+
 <img src="https://github.com/lennon101/blogs/assets/1709944/359a96d9-2ffc-48d4-a4be-6a1f232272ed" width="200">
 
-
-## Table of Contents
-1. **Introduction**
-2. **Why Upgrade to Regulated Power Supply?**
-3. **Understanding Zigbee Irrigation Valves**
-4. **Materials Needed**
-5. **Step-by-Step Conversion Process**
-    - 5.1 Disassembling the Valve
-    - 5.2 Identifying Power Requirements
-    - 5.3 Selecting a Regulated Power Supply
-    - 5.4 Modifying the Valve Circuit
-    - 5.5 Assembling the System
-6. **Testing the Upgraded System**
-7. **Benefits of Regulated Power Supply**
-8. **Troubleshooting Tips**
-9. **Conclusion**
-10. **Additional Resources**
 
 ## Why Upgrade to Regulated Power Supply?
 This was in response to the batteries of these devices draining very quickly and requiring frequent replacements. Upgrading to a regulated power supply ensures a stable and continuous power source, reducing the need for constant maintenance and enhancing the overall reliability of your Zigbee irrigation system.

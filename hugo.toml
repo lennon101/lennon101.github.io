@@ -9,3 +9,9 @@ publishDir = "docs"
 category = "categories"
 tag = "tags"
 series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.image]
+        enableDefault = true
