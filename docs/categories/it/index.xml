@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT on The Lennons Wiki</title>
+    <link>http://localhost:1313/categories/it/</link>
+    <description>Recent content in IT on The Lennons Wiki</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 May 2024 11:05:00 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 10 Search Bar Not Loading</title>
+      <link>http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/</link>
+      <pubDate>Wed, 08 May 2024 11:05:00 +1000</pubDate>
+      <guid>http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/</guid>
+      <description>Windows 10 Search Bar Not Loading What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:&#xA;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value.</description>
+    </item>
+  </channel>
+</rss>

@@ -2,80 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Lennons Wiki</title>
-    <link>https://lennon101.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on The Lennons Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 May 2024 16:05:21 +1000</lastBuildDate>
-    <atom:link href="https://lennon101.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 May 2024 11:05:00 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 10 Search Bar Not Loading</title>
+      <link>http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/</link>
+      <pubDate>Wed, 08 May 2024 11:05:00 +1000</pubDate>
+      <guid>http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/</guid>
+      <description>Windows 10 Search Bar Not Loading What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:&#xA;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value.</description>
+    </item>
     <item>
       <title>Tuya Zigbee Valve Power Supply Conversion</title>
-      <link>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</link>
+      <link>http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/</link>
       <pubDate>Tue, 07 May 2024 16:05:21 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</guid>
+      <guid>http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/</guid>
       <description>Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide Introduction This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step by step.&#xA;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&#xD;Why Upgrade to Regulated Power Supply?</description>
     </item>
     <item>
       <title>Markdown Test</title>
-      <link>https://lennon101.github.io/posts/markdown-test/</link>
+      <link>http://localhost:1313/posts/markdown-test/</link>
       <pubDate>Thu, 02 May 2024 11:02:11 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/markdown-test/</guid>
+      <guid>http://localhost:1313/posts/markdown-test/</guid>
       <description>Markdown Syntax Examples A Subheadings Emphasis Bold Text&#xA;Italic Text&#xA;Lists Ordered List Item 1 Ordered List Item 2 Subitem 1 Subitem 2 Unordered List Item 1 Unordered List Item 2 Links and Images OpenAI&#xD;Blockquotes This is a blockquote.&#xA;Horizontal Rule Code Blocks C++ Code Block #include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world!&amp;#34; &amp;lt;&amp;lt; std::endl; return 0; } Python Code Block def greet(name): print(f&amp;#34;Hello, {name}!&amp;#34;) greet(&amp;#34;Alice&amp;#34;) </description>
     </item>
     <item>
       <title>My first blog post</title>
-      <link>https://lennon101.github.io/posts/my-first-post/</link>
+      <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Thu, 02 May 2024 10:06:07 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>Hi Jakob hey there, this is some text. The below is all written in markdown.&#xA;Section 1 Section 2 Section 3: some python code # this is some python code # Import necessary libraries/modules import os import sys # Define main function def main(): # Your code here # Entry point of the program if __name__ == &amp;#34;__main__&amp;#34;: main() </description>
     </item>
     <item>
       <title></title>
-      <link>https://lennon101.github.io/search/_index.es/</link>
+      <link>http://localhost:1313/search/_index.es/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.es/</guid>
+      <guid>http://localhost:1313/search/_index.es/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://lennon101.github.io/search/_index.fr/</link>
+      <link>http://localhost:1313/search/_index.fr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.fr/</guid>
+      <guid>http://localhost:1313/search/_index.fr/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://lennon101.github.io/search/_index.hi/</link>
+      <link>http://localhost:1313/search/_index.hi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.hi/</guid>
+      <guid>http://localhost:1313/search/_index.hi/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://lennon101.github.io/search/_index.jp/</link>
+      <link>http://localhost:1313/search/_index.jp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.jp/</guid>
+      <guid>http://localhost:1313/search/_index.jp/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://lennon101.github.io/search/_index.pl/</link>
+      <link>http://localhost:1313/search/_index.pl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.pl/</guid>
+      <guid>http://localhost:1313/search/_index.pl/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://lennon101.github.io/search/_index.ru/</link>
+      <link>http://localhost:1313/search/_index.ru/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.ru/</guid>
+      <guid>http://localhost:1313/search/_index.ru/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://lennon101.github.io/search/_index.zh-cn/</link>
+      <link>http://localhost:1313/search/_index.zh-cn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.zh-cn/</guid>
+      <guid>http://localhost:1313/search/_index.zh-cn/</guid>
       <description></description>
     </item>
   </channel>
