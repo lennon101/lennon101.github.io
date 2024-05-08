@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="Windows 10 Search Bar Not Loading What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:
-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value."
+  content="What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value. Name the new value: BingSearchEnabled Double-click the new BingSearchEnabled value to open its properties dialog."
 />
 <meta
   name="keywords"
@@ -18,8 +18,8 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click t
 <meta property="og:url" content="https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/">
   <meta property="og:site_name" content="The Lennons Wiki">
   <meta property="og:title" content="Windows 10 Search Bar Not Loading">
-  <meta property="og:description" content="Windows 10 Search Bar Not Loading What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:
-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &gt; DWORD (32-bit) Value.">
+  <meta property="og:description" content="What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &gt; DWORD (32-bit) Value. Name the new value: BingSearchEnabled Double-click the new BingSearchEnabled value to open its properties dialog.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -29,8 +29,8 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click t
     <meta property="article:tag" content="How-To">
 
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Windows 10 Search Bar Not Loading">
-<meta name="twitter:description" content="Windows 10 Search Bar Not Loading What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:
-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &gt; DWORD (32-bit) Value.">
+<meta name="twitter:description" content="What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &gt; DWORD (32-bit) Value. Name the new value: BingSearchEnabled Double-click the new BingSearchEnabled value to open its properties dialog.">
 
 
 <link rel="canonical" href="https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/" />
@@ -55,7 +55,7 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click t
     <div class="flex flex-row gap justify-between w-full max-w-4xl lg:max-w-5xl h-12 mt-3">
   <div class="flex-none ml-2 md:ml-0">
     <a href="/" class="">
-      <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://placehold.co/512/webp" alt="logo">
+      <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="/profile-pic.PNG" alt="logo">
     </a>
   </div>
   <div class="flex-1"></div>
@@ -63,6 +63,38 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click t
     
 
 
+
+<nav class="h-full static">
+  <button id="navbar-menu-toggle" type="button" class="inline-flex items-center p-2 text-sm text-slate-800 dark:text-slate-200 rounded-lg md:hidden" aria-controls="navbar-menu" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <i class="w-8 h-8">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 6l16 0" />
+  <path d="M4 12l16 0" />
+  <path d="M4 18l16 0" />
+</svg>
+
+    </i>
+  </button>
+  <div class="absolute md:static top-16 left-0 right-0 z-50 hidden w-full md:block md:w-auto" id="navbar-menu">
+    <ul class="flex flex-col mx-2 md:mx-0 md:flex-row md:border-0 rounded-sm md:rounded-full px-3 text-base font-medium text-slate-800 dark:text-slate-200 shadow-lg bg-white dark:bg-gray-600 shadow-slate-800/5 dark:shadow-slate-200/5 ring-1 ring-slate-900/5 dark:ring-slate-100/5">
+    
+        <li id="about" class="">
+          <a class="block px-3 py-3 hover:text-emerald-600"
+            href="" title="About">About</a>
+        </li>
+      
+    
+        <li id="post" class="">
+          <a class="block px-3 py-3 hover:text-emerald-600 text-emerald-600"
+            href="/posts/" title="Post">Post</a>
+        </li>
+      
+    
+    </ul>
+  </div>
+</nav>
 
 
   </div>
@@ -237,8 +269,7 @@ HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click t
       
 
       <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
-        <h1 id="windows-10-search-bar-not-loading">Windows 10 Search Bar Not Loading</h1>
-<h2 id="what-happened">What happened</h2>
+        <h2 id="what-happened">What happened</h2>
 <p>The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window.
 <figure><img src="/posts/windows-10-search-bar-not-loading-fix/empty-search-bar.png" width="500">
 </figure>

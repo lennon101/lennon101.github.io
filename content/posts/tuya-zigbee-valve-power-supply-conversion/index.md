@@ -1,24 +1,22 @@
 +++
-title = 'Tuya Zigbee Valve Power Supply Conversion'
+title = 'Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide'
 date = 2024-05-07T16:05:21+10:00
 draft = false
 categories = ['IoT']
 tags = ['zigbee', 'fw', 'how-to']
 +++
 
-# Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide
-
-## Introduction
+## 1.0 Introduction
 This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I'll walk you through the process, step by step.
 
 [Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller](https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y)
 
 {{< figure src="/tuya-zigbee-valve-controller.png" width="300" >}}
 
-## Why Upgrade to Regulated Power Supply?
+## 2.0 Why Upgrade to Regulated Power Supply?
 This was in response to the batteries of these devices draining very quickly and requiring frequent replacements. Upgrading to a regulated power supply ensures a stable and continuous power source, reducing the need for constant maintenance and enhancing the overall reliability of your Zigbee irrigation system.
 
-## Calculating the voltage required 
+## 3.0 Calculating Power Requirements
 Before diving into the conversion process, it's essential to have a basic understanding of how Zigbee irrigation valves work and the power requirements associated with them. 
 Each device is powered by 4x AA batteries in series. Each AA battery is 1.5V at 100%, therefore, the total voltage needed for this device is:
 
@@ -31,11 +29,11 @@ Therefore:
 total voltage = 6v
 ```
 
-### Current (amps) requirement: 
+### 3.1 Current (amps) requirement: 
 A typical AA battery has a peak current of over 2A. But I know (just from my own experience) that these zigbee devices won't be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous). 
 
-## Materials Needed
-1. An AC to DC power supply with atleast 6v and 1amp output. A typical looking power supply is pictured below
+## 4.0 Materials Needed
+1. An AC to DC power supply with atleast 6v and 1amp output. Most power supplies are either 5V or 12V. A 5v supply will be sufficient but if you have a 12v supply, you will need a voltage regulator shown in step 2 below. A typical looking power supply is pictured below
 {{< figure src="/power-supply.png" width="200" >}}
 
 2. A linear regulator - only needed if you your power supply has an output greater than 6v. A good example is the LM317 Adjustable Voltage Regulator Power Supply (see image below). Just go to AliExpress and search `LM317 Breakout Board`. An example is shown below. 
@@ -45,35 +43,25 @@ A typical AA battery has a peak current of over 2A. But I know (just from my own
 4. A multimetre to check the voltage 
 
 
-## Step-by-Step Process
+## 5.0 Step-by-Step Process
 
-### 5.1 Disassembling the device
-Begin the conversion process by carefully disassembling the Zigbee irrigation valve. Take note of the existing components and their placements.
+### 5.1 Wiring diagram
+Shown below is the wiring diagram for the modified and regulated power supply. If you are using a regulator to change the voltage, you will need to tune the regulator output to the required 6v needed for this unit. Use a multimeter to do so. 
 
-### 5.2 wiring diagram
 {{< figure src="/modified-power-supply.png" width="700" >}}
 
+### 5.2 Disassembling the device
+Begin the conversion process by carefully disassembling the Zigbee irrigation valve. Take note of the existing components and their placements.
+{{< figure src="/steps/combined-1.png" width="1000" >}}
 
-### 5.3 Selecting a Regulated Power Supply
-Explore different regulated power supply options and select the one that best fits your requirements. Consider factors such as voltage, current, and environmental suitability.
+### 5.3 Cut the Power and GND wires
+Cut the power and gnd wires and solder longer wires so there is enoug length to poke through a hole in the 
+{{< figure src="/steps/wires-cut.jpeg" width="300" >}}
 
-### 5.4 Modifying the Valve Circuit
-Learn how to modify the valve circuit to accommodate the regulated power supply. This step may involve rewiring and integrating the new power source seamlessly.
+### 5.4 Modifying the device
+Modify the device to accommodate the regulated power supply or store the power supply in it's own plastic container. This step may involve rewiring and integrating the new power source seamlessly.
 
 ### 5.5 Assembling the System
-Put everything back together, ensuring all components are properly connected. Follow a systematic approach to avoid any issues during the assembly.
+Put everything back together, ensuring all components are properly connected. I found that the best way to do this was using a drill to cut a small hole in the side of the plastic housing and poking the new power supply wires through the housing that way. You can use hot glue or silicon to make the housing waterproof again :) 
+{{< figure src="/steps/assembled.png" width="1000" >}}
 
-## Testing the Upgraded System
-After the conversion, thoroughly test the system to ensure that it functions as expected. Address any issues that may arise during the testing phase.
-
-## Benefits of Regulated Power Supply
-Explore the advantages of upgrading to a regulated power supply, including increased reliability, reduced maintenance costs, and improved overall performance.
-
-## Troubleshooting Tips
-In case you encounter any issues during or after the conversion, refer to our troubleshooting tips to identify and resolve potential problems.
-
-## Conclusion
-Summarize the key points discussed in the blog post and emphasize the benefits of upgrading Zigbee irrigation valves to a regulated power supply.
-
-## Additional Resources
-Provide links to relevant resources, such as recommended power supplies, circuit diagrams, and related articles, to further assist readers in their conversion journey.

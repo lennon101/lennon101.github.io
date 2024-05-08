@@ -6,8 +6,6 @@ categories = ['IT']
 tags = ['windows10', 'how-to']
 +++
 
-# Windows 10 Search Bar Not Loading
-
 ## What happened 
 The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window.
 {{< figure src="/empty-search-bar.png" width="500" >}}
