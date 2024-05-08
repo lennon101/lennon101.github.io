@@ -14,6 +14,7 @@ series = "series"
   # dir name of your blog content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
+  googleAnalyticsID = "G-4M1GT3H8EL"
 
   [params.header]
     logo = "profile-pic.PNG"
