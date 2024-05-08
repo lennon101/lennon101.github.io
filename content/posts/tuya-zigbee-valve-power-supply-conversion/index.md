@@ -1,5 +1,5 @@
 +++
-title = 'Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide'
+title = 'Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide'
 date = 2024-05-07T16:05:21+10:00
 draft = false
 categories = ['IoT']
@@ -7,7 +7,7 @@ tags = ['zigbee', 'fw', 'how-to']
 +++
 
 ## 1.0 Introduction
-This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I'll walk you through the process, step by step.
+This is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I'll walk you through the process, step-by-step.
 
 [Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller](https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y)
 

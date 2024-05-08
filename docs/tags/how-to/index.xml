@@ -16,11 +16,11 @@
       <description>What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:&#xA;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value. Name the new value: BingSearchEnabled Double-click the new BingSearchEnabled value to open its properties dialog.</description>
     </item>
     <item>
-      <title>Converting Zigbee Irrigation Valves from Battery to Regulated Power Supply: A Step-by-Step Guide</title>
+      <title>Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide</title>
       <link>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</link>
       <pubDate>Tue, 07 May 2024 16:05:21 +1000</pubDate>
       <guid>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</guid>
-      <description>1.0 Introduction This is a short blog post about converting Zigbee irrigation valves (pictured below) powered by batteries to a more reliable and sustainable regulated power supply. This upgrade can reduce maintenance efforts, and ensure a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step by step.&#xA;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&#xD;2.</description>
+      <description>1.0 Introduction This is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step-by-step.&#xA;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&#xD;2.</description>
     </item>
   </channel>
 </rss>
