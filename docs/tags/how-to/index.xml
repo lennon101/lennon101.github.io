@@ -6,8 +6,15 @@
     <description>Recent content in How-To on The Lennons Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 May 2024 11:05:00 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2024 10:39:36 +1000</lastBuildDate>
     <atom:link href="https://lennon101.github.io/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Securing Your Nas Against Wansomware</title>
+      <link>https://lennon101.github.io/posts/securing-your-nas/</link>
+      <pubDate>Tue, 14 May 2024 10:39:36 +1000</pubDate>
+      <guid>https://lennon101.github.io/posts/securing-your-nas/</guid>
+      <description>Threat I&amp;rsquo;m on a synology sub-reddit page and I see posts like this every couple of months and it terrifies me:&#xA;This is an example of Ransomware. Ransomware is a type of malicious software designed to block access to a computer system or files until a sum of money, or &amp;ldquo;ransom,&amp;rdquo; is paid. It typically works by encrypting the victim&amp;rsquo;s files or locking them behind a password, rendering them inaccessible. Once the ransomware is activated, the victim is presented with instructions on how to pay the ransom, often in cryptocurrency, in exchange for a decryption key or password.</description>
+    </item>
     <item>
       <title>Windows 10 Search Bar Not Loading</title>
       <link>https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/</link>
