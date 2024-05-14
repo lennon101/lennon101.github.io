@@ -20,14 +20,15 @@ So, in case you havn't already, here's a list I've put together that I **highly*
 1. Secure your network:
     - Enable and make use of the firewall on your router.
     - Port-forward the bare minimum on your router. Make use of reverse proxies through port 443 etc if needed.
-2. Disable the admin account on DSM.
+2. Disable/deactivate the default admin account.
+    - Create a second admin account but don't use a username that references it's admin status eg `admin-user` or `admin-acct` 
 3. Make sure you use a User account when accessing your nas. 
     - Do not use your new admin account for any other use except admin tasks.
 4. Enable 2FA.
 5. Use very secure passwords:
     - Never use the same password twice! 
     - Use tools like [1Password](https://1password.com/) or [Keeper](https://www.keepersecurity.com/) to generate unique passwords and store them safely 
-6. Instead of Synology-EasyConnect use Tailscale.
+6. Instead of [Synology QuickConnect](https://quickconnect.to/) or QNAP's [EasyConnect](https://www.qnap.com/en-au/software/myqnapcloud) use a VPN or [Tailscale](https://tailscale.com/).
 7. Enable the NAS firewall.
 8. Force 2FA for all other NAS users.
 9. Check every password requirement.

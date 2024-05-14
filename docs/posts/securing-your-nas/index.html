@@ -285,7 +285,11 @@ Ransomware is a type of malicious software designed to block access to a compute
 <li>Port-forward the bare minimum on your router. Make use of reverse proxies through port 443 etc if needed.</li>
 </ul>
 </li>
-<li>Disable the admin account on DSM.</li>
+<li>Disable/deactivate the default admin account.
+<ul>
+<li>Create a second admin account but don&rsquo;t use a username that references it&rsquo;s admin status eg <code>admin-user</code> or <code>admin-acct</code></li>
+</ul>
+</li>
 <li>Make sure you use a User account when accessing your nas.
 <ul>
 <li>Do not use your new admin account for any other use except admin tasks.</li>
@@ -300,7 +304,10 @@ Ransomware is a type of malicious software designed to block access to a compute
  to generate unique passwords and store them safely</li>
 </ul>
 </li>
-<li>Instead of Synology-EasyConnect use Tailscale.</li>
+<li>Instead of <a href="https://quickconnect.to/" target="_blank" rel="noopener">Synology QuickConnect</a>
+ or QNAP&rsquo;s <a href="https://www.qnap.com/en-au/software/myqnapcloud" target="_blank" rel="noopener">EasyConnect</a>
+ use a VPN or <a href="https://tailscale.com/" target="_blank" rel="noopener">Tailscale</a>
+.</li>
 <li>Enable the NAS firewall.</li>
 <li>Force 2FA for all other NAS users.</li>
 <li>Check every password requirement.</li>
