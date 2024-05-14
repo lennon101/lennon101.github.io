@@ -1,5 +1,5 @@
 +++
-title = 'Securing Your Nas Against Wansomware'
+title = 'Securing Your Nas Against Ransomware'
 date = 2024-05-14T10:39:36+10:00
 draft = false
 categories = ['IT']
@@ -7,7 +7,7 @@ tags = ['how-to']
 +++
 
 ## Threat
-I'm on a synology sub-reddit page and I see posts like this every couple of months and it terrifies me:
+I'm on a [synology sub-reddit](https://www.reddit.com/r/synology/) page and I see posts like this every couple of months and it terrifies me:
 
 {{< figure src="/attack.png" width="1000" >}}
 
@@ -18,16 +18,18 @@ Ransomware is a type of malicious software designed to block access to a compute
 So, in case you havn't already, here's a list I've put together that I **highly** recommend you follow ASAP: 
 
 1. Secure your network:
-    - enable router firewall
-    - port-forward the bare minimum etc 
-2. Disable the admin account on DSM 
+    - Enable and make use of the firewall on your router.
+    - Port-forward the bare minimum on your router. Make use of reverse proxies through port 443 etc if needed.
+2. Disable the admin account on DSM.
 3. Make sure you use a User account when accessing your nas. 
-    - Do not use your new admin account for any other use except admin tasks 
-4. Enable 2FA
-5. Use very secure passwords
+    - Do not use your new admin account for any other use except admin tasks.
+4. Enable 2FA.
+5. Use very secure passwords:
+    - Never use the same password twice! 
+    - Use tools like [1Password](https://1password.com/) or [Keeper](https://www.keepersecurity.com/) to generate unique passwords and store them safely 
 6. Instead of Synology-EasyConnect use Tailscale.
 7. Enable the NAS firewall.
-8. Force 2FA for all other NAS users 
+8. Force 2FA for all other NAS users.
 9. Check every password requirement.
 10. Set login attempt timeouts to something like 2-3 failed logins = suspend for 4 hours or something.
 11. Don’t reuse passwords.

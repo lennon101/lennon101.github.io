@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-  <title>Securing Your Nas Against Wansomware :: The Lennons Wiki - Example site for hugo-theme-tailwind</title>
+  <title>Securing Your Nas Against Ransomware :: The Lennons Wiki - Example site for hugo-theme-tailwind</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="Threat I&amp;rsquo;m on a synology sub-reddit page and I see posts like this every couple of months and it terrifies me:
+  content="Threat I&amp;rsquo;m on a synology sub-redditpage and I see posts like this every couple of months and it terrifies me:
 This is an example of Ransomware. Ransomware is a type of malicious software designed to block access to a computer system or files until a sum of money, or &amp;ldquo;ransom,&amp;rdquo; is paid. It typically works by encrypting the victim&amp;rsquo;s files or locking them behind a password, rendering them inaccessible. Once the ransomware is activated, the victim is presented with instructions on how to pay the ransom, often in cryptocurrency, in exchange for a decryption key or password."
 />
 <meta
@@ -17,8 +17,8 @@ This is an example of Ransomware. Ransomware is a type of malicious software des
 <meta name="robots" content="noodp" />
 <meta property="og:url" content="https://lennon101.github.io/posts/securing-your-nas/">
   <meta property="og:site_name" content="The Lennons Wiki">
-  <meta property="og:title" content="Securing Your Nas Against Wansomware">
-  <meta property="og:description" content="Threat I’m on a synology sub-reddit page and I see posts like this every couple of months and it terrifies me:
+  <meta property="og:title" content="Securing Your Nas Against Ransomware">
+  <meta property="og:description" content="Threat I’m on a synology sub-redditpage and I see posts like this every couple of months and it terrifies me:
 This is an example of Ransomware. Ransomware is a type of malicious software designed to block access to a computer system or files until a sum of money, or “ransom,” is paid. It typically works by encrypting the victim’s files or locking them behind a password, rendering them inaccessible. Once the ransomware is activated, the victim is presented with instructions on how to pay the ransom, often in cryptocurrency, in exchange for a decryption key or password.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
@@ -27,8 +27,8 @@ This is an example of Ransomware. Ransomware is a type of malicious software des
     <meta property="article:modified_time" content="2024-05-14T10:39:36+10:00">
     <meta property="article:tag" content="How-To">
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Securing Your Nas Against Wansomware">
-<meta name="twitter:description" content="Threat I&rsquo;m on a synology sub-reddit page and I see posts like this every couple of months and it terrifies me:
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Securing Your Nas Against Ransomware">
+<meta name="twitter:description" content="Threat I&rsquo;m on a synology sub-redditpage and I see posts like this every couple of months and it terrifies me:
 This is an example of Ransomware. Ransomware is a type of malicious software designed to block access to a computer system or files until a sum of money, or &ldquo;ransom,&rdquo; is paid. It typically works by encrypting the victim&rsquo;s files or locking them behind a password, rendering them inaccessible. Once the ransomware is activated, the victim is presented with instructions on how to pay the ransom, often in cryptocurrency, in exchange for a decryption key or password.">
 
 
@@ -175,7 +175,7 @@ This is an example of Ransomware. Ransomware is a type of malicious software des
     </div>
     <div class="flex flex-col gap-y-3 p-6">
       <h1 class="text-4xl font-semibold text-slate-800 dark:text-slate-100">
-        <a href="/posts/securing-your-nas/">Securing Your Nas Against Wansomware</a>
+        <a href="/posts/securing-your-nas/">Securing Your Nas Against Ransomware</a>
       </h1>
 
       
@@ -269,7 +269,8 @@ This is an example of Ransomware. Ransomware is a type of malicious software des
 
       <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
         <h2 id="threat">Threat</h2>
-<p>I&rsquo;m on a synology sub-reddit page and I see posts like this every couple of months and it terrifies me:</p>
+<p>I&rsquo;m on a <a href="https://www.reddit.com/r/synology/" target="_blank" rel="noopener">synology sub-reddit</a>
+ page and I see posts like this every couple of months and it terrifies me:</p>
 <figure><img src="/posts/securing-your-nas/attack.png" width="1000">
 </figure>
 
@@ -280,21 +281,28 @@ Ransomware is a type of malicious software designed to block access to a compute
 <ol>
 <li>Secure your network:
 <ul>
-<li>enable router firewall</li>
-<li>port-forward the bare minimum etc</li>
+<li>Enable and make use of the firewall on your router.</li>
+<li>Port-forward the bare minimum on your router. Make use of reverse proxies through port 443 etc if needed.</li>
 </ul>
 </li>
-<li>Disable the admin account on DSM</li>
+<li>Disable the admin account on DSM.</li>
 <li>Make sure you use a User account when accessing your nas.
 <ul>
-<li>Do not use your new admin account for any other use except admin tasks</li>
+<li>Do not use your new admin account for any other use except admin tasks.</li>
 </ul>
 </li>
-<li>Enable 2FA</li>
-<li>Use very secure passwords</li>
+<li>Enable 2FA.</li>
+<li>Use very secure passwords:
+<ul>
+<li>Never use the same password twice!</li>
+<li>Use tools like <a href="https://1password.com/" target="_blank" rel="noopener">1Password</a>
+ or <a href="https://www.keepersecurity.com/" target="_blank" rel="noopener">Keeper</a>
+ to generate unique passwords and store them safely</li>
+</ul>
+</li>
 <li>Instead of Synology-EasyConnect use Tailscale.</li>
 <li>Enable the NAS firewall.</li>
-<li>Force 2FA for all other NAS users</li>
+<li>Force 2FA for all other NAS users.</li>
 <li>Check every password requirement.</li>
 <li>Set login attempt timeouts to something like 2-3 failed logins = suspend for 4 hours or something.</li>
 <li>Don’t reuse passwords.</li>
