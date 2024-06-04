@@ -6,8 +6,15 @@
     <description>Recent content in Posts on The Lennons Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 May 2024 10:39:36 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jun 2024 13:09:00 +1000</lastBuildDate>
     <atom:link href="https://lennon101.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxmox Email Alerts Setup </title>
+      <link>https://lennon101.github.io/posts/my-first-post---copy/</link>
+      <pubDate>Tue, 04 Jun 2024 13:09:00 +1000</pubDate>
+      <guid>https://lennon101.github.io/posts/my-first-post---copy/</guid>
+      <description>1. Install mailutils SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&amp;rsquo;ll need.&#xA;```bash apt update apt install -y libsasl2-modules mailutils ``` 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings&#xD;3. Create app password for the account. 1. Go to [App Passwords](https://security.google.com/settings/security/apppasswords) 2. Select app: `Mail` 3.</description>
+    </item>
     <item>
       <title>Securing Your Nas Against Ransomware</title>
       <link>https://lennon101.github.io/posts/securing-your-nas/</link>

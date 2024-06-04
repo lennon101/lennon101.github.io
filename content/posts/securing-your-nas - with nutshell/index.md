@@ -1,10 +1,12 @@
 +++
 title = 'Securing Your Nas Against Ransomware'
 date = 2024-05-14T10:39:36+10:00
-draft = false 
+draft = true 
 categories = ['IT']
 tags = ['how-to']
 +++
+
+{{< nutshell >}} 
 
 ## Threat
 I'm on a [synology sub-reddit](https://www.reddit.com/r/synology/) page and I see posts like this every couple of months and it terrifies me:
