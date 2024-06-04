@@ -177,13 +177,13 @@
         
           <article class="flex flex-col mt-6 mx-2 md:mx-0 rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-700">
             <div>
-              <a href="/posts/my-first-post---copy/">
+              <a href="/posts/proxmox-email-alerts-setup/">
                 
               </a>
             </div>
             <div class="flex flex-col gap-y-3 p-6">
               <h2 class="text-4xl font-semibold text-slate-800 dark:text-slate-200">
-                <a href="/posts/my-first-post---copy/">Proxmox Email Alerts Setup</a>
+                <a href="/posts/proxmox-email-alerts-setup/">Proxmox Email Alerts Setup</a>
               </h2>
 
               
@@ -191,8 +191,7 @@
   <div class="my-4 text-large text-slate-600 dark:text-slate-300">
     <ol>
 <li>Install mailutils SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we’ll need.
-<code>bash apt update apt install -y libsasl2-modules mailutils </code> 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. 1. Go to <a href="https://security.google.com/settings/security/apppasswords" target="_blank" rel="noopener">App Passwords</a>
- 2. Select app: <code>Mail</code> 3.</li>
+apt update apt install -y libsasl2-modules mailutils 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. Go to App PasswordsSelect app: Mail Select device: Other Type in: Proxmox or whatever you want here 4.</li>
 </ol>
 
   </div>

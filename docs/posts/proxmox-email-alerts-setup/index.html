@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <title>Proxmox Email Alerts Setup :: The Lennons Wiki - Example site for hugo-theme-tailwind</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -8,18 +8,18 @@
 <meta
   name="description"
   content="1. Install mailutils SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&amp;rsquo;ll need.
-```bash apt update apt install -y libsasl2-modules mailutils ``` 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. 1. Go to [App Passwords](https://security.google.com/settings/security/apppasswords) 2. Select app: `Mail` 3."
+apt update apt install -y libsasl2-modules mailutils 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. Go to App PasswordsSelect app: Mail Select device: Other Type in: Proxmox or whatever you want here 4."
 />
 <meta
   name="keywords"
   content="hugo, tailwind, tailwindcss, hugo theme, hugo theme tailwind"
 />
 <meta name="robots" content="noodp" />
-<meta property="og:url" content="http://localhost:1313/posts/my-first-post---copy/">
+<meta property="og:url" content="https://lennon101.github.io/posts/proxmox-email-alerts-setup/">
   <meta property="og:site_name" content="The Lennons Wiki">
   <meta property="og:title" content="Proxmox Email Alerts Setup">
   <meta property="og:description" content="1. Install mailutils SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we’ll need.
-```bash apt update apt install -y libsasl2-modules mailutils ``` 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. 1. Go to [App Passwords](https://security.google.com/settings/security/apppasswords) 2. Select app: `Mail` 3.">
+apt update apt install -y libsasl2-modules mailutils 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. Go to App PasswordsSelect app: Mail Select device: Other Type in: Proxmox or whatever you want here 4.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -30,13 +30,13 @@
 
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Proxmox Email Alerts Setup">
 <meta name="twitter:description" content="1. Install mailutils SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&rsquo;ll need.
-```bash apt update apt install -y libsasl2-modules mailutils ``` 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. 1. Go to [App Passwords](https://security.google.com/settings/security/apppasswords) 2. Select app: `Mail` 3.">
+apt update apt install -y libsasl2-modules mailutils 2. Enable 2FA for the gmail account. This is the account that will be used by proxmox to send emails. Go to security settings3. Create app password for the account. Go to App PasswordsSelect app: Mail Select device: Other Type in: Proxmox or whatever you want here 4.">
 
 
-<link rel="canonical" href="http://localhost:1313/posts/my-first-post---copy/" />
+<link rel="canonical" href="https://lennon101.github.io/posts/proxmox-email-alerts-setup/" />
 
 <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/css/index.e35987a77152345c1efaebd6ce6240488de0f6d5a0c1d19a843ff32bba9f70bb.css">
+<link rel="stylesheet" href="/css/index.min.5d96433bd17079764d5a8866addd6d7848ea8295977a06688f43c5be97af544e.css">
 
 
 
@@ -68,18 +68,7 @@
 
   
 </head>
-<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800">
-    
-<div class="fixed right-0 top-0 z-50 flex items-center justify-center bg-gray-200 p-2 text-sm uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
-</div>
-
-  <header class="flex flex-none justify-center z-10">
+<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800"><header class="flex flex-none justify-center z-10">
     <div class="flex flex-row gap justify-between w-full max-w-4xl lg:max-w-5xl h-12 mt-3">
   <div class="flex-none ml-2 md:ml-0">
     <a href="/" class="">
@@ -181,13 +170,13 @@
 <div class="w-full max-w-4xl lg:max-w-5xl">
   <div class="flex flex-col mt-6 mx-2 md:mx-0 rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-700">
     <div>
-      <a href="/posts/my-first-post---copy/">
+      <a href="/posts/proxmox-email-alerts-setup/">
         
       </a>
     </div>
     <div class="flex flex-col gap-y-3 p-6">
       <h1 class="text-4xl font-semibold text-slate-800 dark:text-slate-100">
-        <a href="/posts/my-first-post---copy/">Proxmox Email Alerts Setup</a>
+        <a href="/posts/proxmox-email-alerts-setup/">Proxmox Email Alerts Setup</a>
       </h1>
 
       
@@ -305,42 +294,34 @@
       <article class="mt-6 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
         <h2 id="1-install-mailutils">1. Install mailutils</h2>
 <p>SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&rsquo;ll need.</p>
-<pre><code>```bash
-apt update
+<pre tabindex="0"><code>apt update
 apt install -y libsasl2-modules mailutils
-```
-</code></pre>
-<h2 id="2-enable-2fa-for-the-gmail-account">2. Enable 2FA for the gmail account.</h2>
+</code></pre><h2 id="2-enable-2fa-for-the-gmail-account">2. Enable 2FA for the gmail account.</h2>
 <p>This is the account that will be used by proxmox to send emails. Go to <a href="https://myaccount.google.com/security" target="_blank" rel="noopener">security settings</a>
 </p>
 <h2 id="3-create-app-password-for-the-account">3. Create app password for the account.</h2>
-<pre><code>1. Go to [App Passwords](https://security.google.com/settings/security/apppasswords)
-2. Select app: `Mail`
-3. Select device: `Other`
-4. Type in: `Proxmox` or whatever you want here
-</code></pre>
+<ol>
+<li>Go to <a href="https://security.google.com/settings/security/apppasswords" target="_blank" rel="noopener">App Passwords</a>
+</li>
+<li>Select app: <code>Mail</code></li>
+<li>Select device: <code>Other</code></li>
+<li>Type in: <code>Proxmox</code> or whatever you want here</li>
+</ol>
 <h2 id="4-setup-gmail-credentials">4. Setup gmail credentials</h2>
 <p>Write gmail credentials to file and hash it. Again, make sure you are root.</p>
-<pre><code>```bash
-echo &quot;smtp.gmail.com youremail@gmail.com:yourpassword&quot; &gt; /etc/postfix/sasl_passwd
+<pre tabindex="0"><code>echo &#34;smtp.gmail.com youremail@gmail.com:yourpassword&#34; &gt; /etc/postfix/sasl_passwd
 
 # chmod u=rw
 chmod 600 /etc/postfix/sasl_passwd
 
 # generate /etc/postfix/sasl_passwd.db
 postmap hash:/etc/postfix/sasl_passwd
-```
-</code></pre>
-<h2 id="5-proxmox-config">5. Proxmox config</h2>
+</code></pre><h2 id="5-proxmox-config">5. Proxmox config</h2>
 <p>Open the Postfix configuration file with editor of your choice.</p>
-<pre><code>```bash
-nano /etc/postfix/main.cf
-```
-</code></pre>
-<h2 id="6-edit-maincf">6. Edit main.cf</h2>
+<pre tabindex="0"><code>nano /etc/postfix/main.cf
+</code></pre><h2 id="6-edit-maincf">6. Edit main.cf</h2>
 <p>Append the following to the end of the file:</p>
-<pre><code>```
-relayhost = smtp.gmail.com:587
+<pre tabindex="0"><code>relayhost = smtp.gmail.com:587
 smtp_use_tls = yes
 smtp_sasl_auth_enable = yes
 smtp_sasl_security_options =
@@ -348,28 +329,19 @@ smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_tls_CAfile = /etc/ssl/certs/Entrust_Root_Certification_Authority.pem
 smtp_tls_session_cache_database = btree:/var/lib/postfix/smtp_tls_session_cache
 smtp_tls_session_cache_timeout = 3600s
+</code></pre><p><strong>IMPORTANT</strong>: Comment out the existing line containing just <code>relayhost=</code> since we are using this key in our configuration we just pasted in.</p>
+<figure><img src="/posts/proxmox-email-alerts-setup/relayhost.png" width="1000">
+</figure>
 
-```
-
-**IMPORTANT**: Comment out the existing line containing just `relayhost=` since we are using this key in our configuration we just pasted in.
-</code></pre>
-<p><div class="not-prose">
-<figure>
-    <img src="https://user-images.githubusercontent.com/12147036/192343565-3d4c0235-07f7-4a82-8381-72e654368425.png"
-      alt="Screen Shot 2022-09-26 at 10 36 42 AM" 
-      loading="lazy"
-    >
-  </figure></div>
-</p>
 <h2 id="7-reload-postfix">7. Reload postfix</h2>
 <pre><code>```bash
 postfix reload
 ```
 </code></pre>
 <h2 id="8-test-it-worked">8. Test it worked</h2>
-<p>Test to make sure everything is hunky-dory.
-<code>bash echo &quot;sample message&quot; | mail -s &quot;sample subject&quot; anotheremail@gmail.com </code></p>
-<p>Credit: <a href="https://gist.github.com/tomdaley92" target="_blank" rel="noopener">tomdaley92</a>
+<p>Test to make sure everything is working with:</p>
+<pre tabindex="0"><code>echo &#34;sample message&#34; | mail -s &#34;sample subject&#34; anotheremail@gmail.com
+</code></pre><p>Credit: <a href="https://gist.github.com/tomdaley92" target="_blank" rel="noopener">tomdaley92</a>
  &ndash;&gt; <a href="https://gist.github.com/tomdaley92/9315b9326d4589c9652ce0307c9c38a3" target="_blank" rel="noopener">original source</a>
 </p>
 
@@ -423,7 +395,7 @@ postfix reload
 </section>
 
   </footer>
-  <script src="/main.js"></script>
+  <script src="/main.min.c6372b6836971865bd94bfde974748aca8415824a2facab6ccd66a87384bfacb.js"></script>
 
 <div class="hidden top-1 right-1" id="code-copy">
   <i class="h-6 w-6 block">
@@ -443,7 +415,7 @@ postfix reload
 </svg>
 
   </i>
-</div><script src="/code-copy.js"></script>
+</div><script src="/code-copy.min.4be95a7068ec721962fd0df64ce1c8673df8035fde465874f1e6e67e2aac7f71.js"></script>
 
 
 
