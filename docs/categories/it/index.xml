@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>IT on Lenno&#39;s Space</title>
-        <link>https://lennon101.github.io/categories/it/</link>
+        <link>http://localhost:1313/categories/it/</link>
         <description>Recent content in IT on Lenno&#39;s Space</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 04 Jun 2024 13:09:00 +1000</lastBuildDate><atom:link href="https://lennon101.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 04 Jun 2024 13:09:00 +1000</lastBuildDate><atom:link href="http://localhost:1313/categories/it/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Proxmox Email Alerts Setup</title>
-        <link>https://lennon101.github.io/p/proxmox-email-alerts-setup/</link>
+        <link>http://localhost:1313/p/proxmox-email-alerts-setup/</link>
         <pubDate>Tue, 04 Jun 2024 13:09:00 +1000</pubDate>
         
-        <guid>https://lennon101.github.io/p/proxmox-email-alerts-setup/</guid>
-        <description>&lt;img src="https://lennon101.github.io/p/proxmox-email-alerts-setup/cover.png" alt="Featured image of post Proxmox Email Alerts Setup" /&gt;&lt;h2 id=&#34;1-install-mailutils&#34;&gt;1. Install mailutils
+        <guid>http://localhost:1313/p/proxmox-email-alerts-setup/</guid>
+        <description>&lt;img src="http://localhost:1313/p/proxmox-email-alerts-setup/cover.png" alt="Featured image of post Proxmox Email Alerts Setup" /&gt;&lt;h2 id=&#34;1-install-mailutils&#34;&gt;1. Install mailutils
 &lt;/h2&gt;&lt;p&gt;SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&amp;rsquo;ll need.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;apt update
 apt install -y libsasl2-modules mailutils
@@ -50,7 +50,7 @@ smtp_tls_CAfile = /etc/ssl/certs/Entrust_Root_Certification_Authority.pem
 smtp_tls_session_cache_database = btree:/var/lib/postfix/smtp_tls_session_cache
 smtp_tls_session_cache_timeout = 3600s
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;: Comment out the existing line containing just &lt;code&gt;relayhost=&lt;/code&gt; since we are using this key in our configuration we just pasted in.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/proxmox-email-alerts-setup/relayhost.png&#34; width=&#34;1000&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/proxmox-email-alerts-setup/relayhost.png&#34; width=&#34;1000&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;7-reload-postfix&#34;&gt;7. Reload postfix
@@ -68,14 +68,14 @@ postfix reload
         </item>
         <item>
         <title>Securing Your Nas Against Ransomware</title>
-        <link>https://lennon101.github.io/p/securing-your-nas-against-ransomware/</link>
+        <link>http://localhost:1313/p/securing-your-nas-against-ransomware/</link>
         <pubDate>Tue, 14 May 2024 10:39:36 +1000</pubDate>
         
-        <guid>https://lennon101.github.io/p/securing-your-nas-against-ransomware/</guid>
-        <description>&lt;img src="https://lennon101.github.io/p/securing-your-nas-against-ransomware/attack.png" alt="Featured image of post Securing Your Nas Against Ransomware" /&gt;&lt;h2 id=&#34;threat&#34;&gt;Threat
+        <guid>http://localhost:1313/p/securing-your-nas-against-ransomware/</guid>
+        <description>&lt;img src="http://localhost:1313/p/securing-your-nas-against-ransomware/attack.png" alt="Featured image of post Securing Your Nas Against Ransomware" /&gt;&lt;h2 id=&#34;threat&#34;&gt;Threat
 &lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m on a &lt;a class=&#34;link&#34; href=&#34;https://www.reddit.com/r/synology/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;synology sub-reddit&lt;/a&gt; page and I see posts like this every couple of months and it terrifies me:&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/securing-your-nas-against-ransomware/attack.png&#34; width=&#34;1000&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/securing-your-nas-against-ransomware/attack.png&#34; width=&#34;1000&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;This is an example of Ransomware.
@@ -124,26 +124,26 @@ Ransomware is a type of malicious software designed to block access to a compute
         </item>
         <item>
         <title>Windows 10 Search Bar Not Loading</title>
-        <link>https://lennon101.github.io/p/windows-10-search-bar-not-loading/</link>
+        <link>http://localhost:1313/p/windows-10-search-bar-not-loading/</link>
         <pubDate>Wed, 08 May 2024 11:05:00 +1000</pubDate>
         
-        <guid>https://lennon101.github.io/p/windows-10-search-bar-not-loading/</guid>
+        <guid>http://localhost:1313/p/windows-10-search-bar-not-loading/</guid>
         <description>&lt;h2 id=&#34;what-happened&#34;&gt;What happened
 &lt;/h2&gt;&lt;p&gt;The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window.
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/empty-search-bar.png&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/empty-search-bar.png&#34; width=&#34;500&#34;&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;the-fix&#34;&gt;The fix
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Right click on the windows key and tap &lt;strong&gt;Run&lt;/strong&gt;
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/open-run.png&#34; width=&#34;300&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/open-run.png&#34; width=&#34;300&#34;&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Open the Registery Editor by typing &lt;strong&gt;regedit&lt;/strong&gt; and tapping ok
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/open-regedit.png&#34; width=&#34;400&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/open-regedit.png&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -152,20 +152,20 @@ Ransomware is a type of malicious software designed to block access to a compute
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search
-&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/search.png&#34; width=&#34;600&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/search.png&#34; width=&#34;600&#34;&gt;
 &lt;/figure&gt;
 
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value. Name the new value:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BingSearchEnabled
-&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/bing-enabled.png&#34; width=&#34;600&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/bing-enabled.png&#34; width=&#34;600&#34;&gt;
 &lt;/figure&gt;
 
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;Double-click the new BingSearchEnabled value to open its properties dialog. The number in the “Value data” box should already be 0. Just ensure it’s still 0. Click OK to continue.
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/edit-word.png&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/edit-word.png&#34; width=&#34;600&#34;&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -175,13 +175,13 @@ Ransomware is a type of malicious software designed to block access to a compute
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Note Well:&lt;/strong&gt;
 If you don’t see &lt;code&gt;CortanaConsent&lt;/code&gt;, create it by following the same steps you used to create &lt;code&gt;BingSearchEnabled&lt;/code&gt;.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/cortana-consent.png&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/cortana-consent.png&#34; width=&#34;600&#34;&gt;
 &lt;/figure&gt;
 
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;Restart &lt;code&gt;Explorer.Exe&lt;/code&gt; by opening the &lt;code&gt;TaskManager&lt;/code&gt;, right clicking on Windows Explorer, and tapping restart. The Windows Search Bar should now return to a working state&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/restart-explorer.png&#34; width=&#34;1000&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/p/windows-10-search-bar-not-loading/restart-explorer.png&#34; width=&#34;1000&#34;&gt;
 &lt;/figure&gt;
 
 </description>

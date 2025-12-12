@@ -1,10 +1,12 @@
-+++
-title = 'Windows 10 Search Bar Not Loading'
-date = 2024-05-08T11:05:00+10:00
-draft = false
-categories = ['IT']
-tags = ['windows10', 'how-to']
-+++
+---
+title: 'Windows 10 Search Bar Not Loading'
+date: 2024-05-08T11:05:00+10:00
+draft: false
+categories:
+    - Wiki
+tags:
+    - IT
+---
 
 ## What happened 
 The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window.

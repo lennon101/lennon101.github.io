@@ -3,10 +3,9 @@ title: Proxmox Email Alerts Setup
 description: Setting up email alerts for proxmox
 date: 2024-06-04T13:09:00+10:00
 categories:
-    - IT
+    - Wiki
 tags:
-    - 'how-To'
-    - 'proxmox'
+    - IT
 image: cover.png
 ---
 

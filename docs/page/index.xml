@@ -12,10 +12,10 @@
         <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
         
         <guid>https://lennon101.github.io/about/</guid>
-        <description>&lt;h1 id=&#34;about-the-lennons-wiki&#34;&gt;About The Lennons Wiki
-&lt;/h1&gt;&lt;p&gt;Welcome to my personal wiki and technical documentation hub!&lt;/p&gt;
+        <description>&lt;h1 id=&#34;about-lennos-space&#34;&gt;About Lenno&amp;rsquo;s Space
+&lt;/h1&gt;&lt;p&gt;Welcome to &lt;strong&gt;Lenno&amp;rsquo;s Space&lt;/strong&gt; — a collection of personal blogs and technical guides!&lt;/p&gt;
 &lt;h2 id=&#34;what-is-this-site&#34;&gt;What is This Site?
-&lt;/h2&gt;&lt;p&gt;This is a collection of guides, tutorials, and technical documentation that I&amp;rsquo;ve created while working on various projects. The goal is to share knowledge and help others who might encounter similar challenges.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;This is a personal blog and technical documentation hub featuring guides, tutorials, and blog posts that I&amp;rsquo;ve created while working on various projects. The goal is to share knowledge and help others who might encounter similar challenges.&lt;/p&gt;
 &lt;h2 id=&#34;topics-covered&#34;&gt;Topics Covered
 &lt;/h2&gt;&lt;h3 id=&#34;homelab--infrastructure&#34;&gt;Homelab &amp;amp; Infrastructure
 &lt;/h3&gt;&lt;ul&gt;
@@ -52,10 +52,11 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;site-information&#34;&gt;Site Information
 &lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Site name&lt;/strong&gt;: Lenno&amp;rsquo;s Space&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Built with&lt;/strong&gt;: Hugo static site generator&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Tailwind&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Hugo Theme Stack&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hosted on&lt;/strong&gt;: GitHub Pages&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Last updated&lt;/strong&gt;: December 2025&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Started&lt;/strong&gt;: 2023&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;Thanks for visiting! I hope you find the content useful.&lt;/p&gt;
@@ -67,6 +68,14 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://lennon101.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Categories</title>
+        <link>https://lennon101.github.io/categories/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://lennon101.github.io/categories/</guid>
         <description></description>
         </item>
         <item>

@@ -3,9 +3,10 @@ title: 'Securing Your Nas Against Ransomware'
 date: 2024-05-14T10:39:36+10:00
 draft: false 
 categories:
-    - IT
+    - Wiki
 tags: 
-    - 'how-to'
+    - IT
+    - NAS
 image: attack.png
 ---
 

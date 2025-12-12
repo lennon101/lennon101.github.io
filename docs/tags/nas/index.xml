@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>NAS on Lenno&#39;s Space</title>
+        <link>https://lennon101.github.io/tags/nas/</link>
+        <description>Recent content in NAS on Lenno&#39;s Space</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 14 May 2024 10:39:36 +1000</lastBuildDate><atom:link href="https://lennon101.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Securing Your Nas Against Ransomware</title>
+        <link>https://lennon101.github.io/p/securing-your-nas-against-ransomware/</link>
+        <pubDate>Tue, 14 May 2024 10:39:36 +1000</pubDate>
+        
+        <guid>https://lennon101.github.io/p/securing-your-nas-against-ransomware/</guid>
+        <description>&lt;img src="https://lennon101.github.io/p/securing-your-nas-against-ransomware/attack.png" alt="Featured image of post Securing Your Nas Against Ransomware" /&gt;&lt;h2 id=&#34;threat&#34;&gt;Threat
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m on a &lt;a class=&#34;link&#34; href=&#34;https://www.reddit.com/r/synology/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;synology sub-reddit&lt;/a&gt; page and I see posts like this every couple of months and it terrifies me:&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/securing-your-nas-against-ransomware/attack.png&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is an example of Ransomware.
+Ransomware is a type of malicious software designed to block access to a computer system or files until a sum of money, or &amp;ldquo;ransom,&amp;rdquo; is paid. It typically works by encrypting the victim&amp;rsquo;s files or locking them behind a password, rendering them inaccessible. Once the ransomware is activated, the victim is presented with instructions on how to pay the ransom, often in cryptocurrency, in exchange for a decryption key or password. Ransomware attacks can be devastating for individuals and organizations, causing data loss, financial harm, and disrupting normal operations. Cybersecurity experts recommend regularly backing up data, maintaining updated software, and exercising caution when clicking on links or downloading files to prevent falling victim to ransomware attacks.&lt;/p&gt;
+&lt;h2 id=&#34;mitigation&#34;&gt;Mitigation
+&lt;/h2&gt;&lt;p&gt;So, in case you havn&amp;rsquo;t already, here&amp;rsquo;s a list I&amp;rsquo;ve put together that I &lt;strong&gt;highly&lt;/strong&gt; recommend you follow ASAP:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Secure your network &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/posts/securing-your-nas/#test&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;:Expand for more detail&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Disable/deactivate the default admin account.
+&lt;ul&gt;
+&lt;li&gt;Create a second admin account but don&amp;rsquo;t use a username that references it&amp;rsquo;s admin status eg &lt;code&gt;admin-user&lt;/code&gt; or &lt;code&gt;admin-acct&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make sure you use a User account when accessing your nas.
+&lt;ul&gt;
+&lt;li&gt;Do not use your new admin account for any other use except admin tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Enable 2FA.&lt;/li&gt;
+&lt;li&gt;Use very secure passwords:
+&lt;ul&gt;
+&lt;li&gt;Never use the same password twice!&lt;/li&gt;
+&lt;li&gt;Use tools like &lt;a class=&#34;link&#34; href=&#34;https://1password.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1Password&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://www.keepersecurity.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Keeper&lt;/a&gt; to generate unique passwords and store them safely&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Instead of &lt;a class=&#34;link&#34; href=&#34;https://quickconnect.to/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Synology QuickConnect&lt;/a&gt; or QNAP&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.qnap.com/en-au/software/myqnapcloud&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EasyConnect&lt;/a&gt; use a VPN or &lt;a class=&#34;link&#34; href=&#34;https://tailscale.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tailscale&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enable the NAS firewall.&lt;/li&gt;
+&lt;li&gt;Force 2FA for all other NAS users.&lt;/li&gt;
+&lt;li&gt;Check every password requirement.&lt;/li&gt;
+&lt;li&gt;Set login attempt timeouts to something like 2-3 failed logins = suspend for 4 hours or something.&lt;/li&gt;
+&lt;li&gt;Don’t reuse passwords.&lt;/li&gt;
+&lt;li&gt;Consider using AWS Glacier backups (or review which cold storage solution is best for you). It’s painfully slow but really cheap.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;test&#34;&gt;test
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Enable and make use of the firewall on your router.&lt;/li&gt;
+&lt;li&gt;Port-forward the bare minimum on your router. Make use of reverse proxies through port 443 etc if needed.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

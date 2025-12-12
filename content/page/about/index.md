@@ -10,13 +10,13 @@ menu:
             icon: user
 ---
 
-# About The Lennons Wiki
+# About Lenno's Space
 
-Welcome to my personal wiki and technical documentation hub!
+Welcome to **Lenno's Space** — a collection of personal blogs and technical guides!
 
 ## What is This Site?
 
-This is a collection of guides, tutorials, and technical documentation that I've created while working on various projects. The goal is to share knowledge and help others who might encounter similar challenges.
+This is a personal blog and technical documentation hub featuring guides, tutorials, and blog posts that I've created while working on various projects. The goal is to share knowledge and help others who might encounter similar challenges.
 
 ## Topics Covered
 
@@ -51,10 +51,11 @@ If you find any errors or have suggestions for improvements, feel free to:
 
 ## Site Information
 
+- **Site name**: Lenno's Space
 - **Built with**: Hugo static site generator
-- **Theme**: Tailwind
+- **Theme**: Hugo Theme Stack
 - **Hosted on**: GitHub Pages
-- **Last updated**: December 2025
+- **Started**: 2023
 
 ---
 

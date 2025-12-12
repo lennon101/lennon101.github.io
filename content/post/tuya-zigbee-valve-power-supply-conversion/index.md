@@ -3,10 +3,9 @@ title: 'Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide'
 date: 2024-05-07T16:05:21+10:00
 draft: false
 categories: 
-    - Home Automation
+    - Wiki
 tags:
-    - zigbee
-    - wiki
+    - Home Automation
 image: tuya-zigbee-valve-controller.png
 ---
 
