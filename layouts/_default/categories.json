@@ -1,0 +1,6 @@
+{{- /* JSON output for the Categories page (layout: "categories") */ -}}
+{{- $items := slice -}}
+{{- range $name, $taxonomy := .Site.Taxonomies.categories -}}
+  {{- $items = $items | append (dict "name" $name "count" $taxonomy.Count "permalink" $taxonomy.Page.Permalink) -}}
+{{- end -}}
+{{- $items | jsonify -}}
