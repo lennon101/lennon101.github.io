@@ -1,10 +1,12 @@
 baseURL = 'https://lennon101.github.io/'
 languageCode = 'en-us'
 title = 'The Lennons Wiki'
-paginate = 10
 theme = "tailwind"
 publishDir = "docs"
 googleAnalytics = "G-4M1GT3H8EL"
+
+[pagination]
+pagerSize = 10
 
 [taxonomies]
 category = "categories"

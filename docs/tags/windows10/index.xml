@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows10 on The Lennons Wiki</title>
-    <link>https://lennon101.github.io/tags/windows10/</link>
+    <link>http://localhost:1313/tags/windows10/</link>
     <description>Recent content in Windows10 on The Lennons Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 May 2024 11:05:00 +1000</lastBuildDate>
-    <atom:link href="https://lennon101.github.io/tags/windows10/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/windows10/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 10 Search Bar Not Loading</title>
-      <link>https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/</link>
+      <link>http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/</link>
       <pubDate>Wed, 08 May 2024 11:05:00 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/</guid>
-      <description>What happened The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window. The fix Right click on the windows key and tap Run Open the Registery Editor by typing regedit and tapping ok Navigate to:&#xA;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value. Name the new value: BingSearchEnabled Double-click the new BingSearchEnabled value to open its properties dialog.</description>
+      <guid>http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/</guid>
+      <description>&lt;h2 id=&#34;what-happened&#34;&gt;What happened&lt;/h2&gt;&#xA;&lt;p&gt;The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window.&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/empty-search-bar.png&#34; width=&#34;500&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-fix&#34;&gt;The fix&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Right click on the windows key and tap &lt;strong&gt;Run&lt;/strong&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/open-run.png&#34; width=&#34;300&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open the Registery Editor by typing &lt;strong&gt;regedit&lt;/strong&gt; and tapping ok&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/open-regedit.png&#34; width=&#34;400&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Navigate to:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/search.png&#34; width=&#34;600&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value. Name the new value:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BingSearchEnabled&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/bing-enabled.png&#34; width=&#34;600&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Double-click the new BingSearchEnabled value to open its properties dialog. The number in the “Value data” box should already be 0. Just ensure it’s still 0. Click OK to continue.&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/posts/windows-10-search-bar-not-loading-fix/edit-word.png&#34; width=&#34;600&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

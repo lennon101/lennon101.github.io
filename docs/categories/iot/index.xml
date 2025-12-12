@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IoT on The Lennons Wiki</title>
-    <link>https://lennon101.github.io/categories/iot/</link>
+    <link>http://localhost:1313/categories/iot/</link>
     <description>Recent content in IoT on The Lennons Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 May 2024 16:05:21 +1000</lastBuildDate>
-    <atom:link href="https://lennon101.github.io/categories/iot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide</title>
-      <link>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</link>
+      <link>http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/</link>
       <pubDate>Tue, 07 May 2024 16:05:21 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</guid>
-      <description>1.0 Introduction This is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step-by-step.&#xA;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&#xD;2.</description>
+      <guid>http://localhost:1313/posts/tuya-zigbee-valve-power-supply-conversion/</guid>
+      <description>&lt;h2 id=&#34;10-introduction&#34;&gt;1.0 Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step-by-step.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
