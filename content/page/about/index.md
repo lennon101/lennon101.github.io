@@ -5,7 +5,7 @@ slug: "about"
 draft: false
 menu:
     main:
-        weight: 2
+        weight: 5
         params:
             icon: user
 ---

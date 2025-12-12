@@ -75,9 +75,3 @@ menu:
       weight: 1
       params:
         icon: home
-    - identifier: wiki
-      name: Wiki
-      url: /categories/wiki/
-      weight: 2
-      params:
-        icon: archives
