@@ -2,38 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on The Lennons Wiki</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://lennon101.github.io/categories/</link>
     <description>Recent content in Categories on The Lennons Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Jun 2024 13:09:00 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lennon101.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IT</title>
-      <link>http://localhost:1313/categories/it/</link>
+      <link>https://lennon101.github.io/categories/it/</link>
       <pubDate>Tue, 04 Jun 2024 13:09:00 +1000</pubDate>
-      <guid>http://localhost:1313/categories/it/</guid>
+      <guid>https://lennon101.github.io/categories/it/</guid>
       <description></description>
     </item>
     <item>
       <title>IoT</title>
-      <link>http://localhost:1313/categories/iot/</link>
+      <link>https://lennon101.github.io/categories/iot/</link>
       <pubDate>Tue, 07 May 2024 16:05:21 +1000</pubDate>
-      <guid>http://localhost:1313/categories/iot/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>http://localhost:1313/categories/markdown/</link>
-      <pubDate>Thu, 02 May 2024 11:02:11 +1000</pubDate>
-      <guid>http://localhost:1313/categories/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>http://localhost:1313/categories/testing/</link>
-      <pubDate>Thu, 02 May 2024 11:02:11 +1000</pubDate>
-      <guid>http://localhost:1313/categories/testing/</guid>
+      <guid>https://lennon101.github.io/categories/iot/</guid>
       <description></description>
     </item>
   </channel>
