@@ -1,12 +1,20 @@
 baseURL = 'https://lennon101.github.io/'
 languageCode = 'en-us'
 title = 'The Lennons Wiki'
-theme = "tailwind"
+theme = "hugo-theme-stack"
 publishDir = "docs"
-googleAnalytics = "G-4M1GT3H8EL"
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+
+[services.googleAnalytics]
+id = "G-4M1GT3H8EL"
 
 [pagination]
 pagerSize = 10
+
+[permalinks]
+post = "/p/:slug/"
+page = "/:slug/"
 
 [taxonomies]
 category = "categories"
@@ -14,27 +22,63 @@ tag = "tags"
 series = "series"
 
 [params]
-  # dir name of your blog content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+mainSections = ["post"]
+featuredImageField = "image"
+rssFullContent = true
 
-  [params.header]
-    logo = "profile-pic.PNG"
+[params.footer]
+since = 2023
 
-  [params.footer]
-    since = 2023
-    poweredby = true
+[params.dateFormat]
+published = "Jan 02, 2006"
+lastUpdated = "Jan 02, 2006 15:04 MST"
+
+[params.sidebar]
+emoji = "📚"
+subtitle = "A collection of technical guides and documentation"
+
+[params.sidebar.avatar]
+enabled = true
+local = true
+src = "img/avatar.png"
+
+[params.article]
+math = false
+toc = true
+readingTime = true
+
+[params.comments]
+enabled = false
+
+[params.widgets]
+
+[[params.widgets.homepage]]
+type = "search"
+
+[[params.widgets.homepage]]
+type = "archives"
+[params.widgets.homepage.params]
+limit = 5
+
+[[params.widgets.homepage]]
+type = "categories"
+[params.widgets.homepage.params]
+limit = 10
+
+[[params.widgets.homepage]]
+type = "tag-cloud"
+[params.widgets.homepage.params]
+limit = 10
+
+[[params.widgets.page]]
+type = "toc"
 
 [menu]
 
-  [[menu.main]]
-    identifier = "post"
-    name = "Post"
-    pageRef = "/posts"
-    weight = 0
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    pageRef = "/about"
-    weight = 10
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[menu.main.params]
+icon = "home"

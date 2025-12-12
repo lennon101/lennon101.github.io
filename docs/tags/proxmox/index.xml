@@ -1,19 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Proxmox on The Lennons Wiki</title>
-    <link>https://lennon101.github.io/tags/proxmox/</link>
-    <description>Recent content in Proxmox on The Lennons Wiki</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 04 Jun 2024 13:09:00 +1000</lastBuildDate>
-    <atom:link href="https://lennon101.github.io/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Proxmox Email Alerts Setup</title>
-      <link>https://lennon101.github.io/posts/proxmox-email-alerts-setup/</link>
-      <pubDate>Tue, 04 Jun 2024 13:09:00 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/proxmox-email-alerts-setup/</guid>
-      <description>&lt;h2 id=&#34;1-install-mailutils&#34;&gt;1. Install mailutils&lt;/h2&gt;&#xA;&lt;p&gt;SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&amp;rsquo;ll need.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;apt update&#xA;apt install -y libsasl2-modules mailutils&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-enable-2fa-for-the-gmail-account&#34;&gt;2. Enable 2FA for the gmail account.&lt;/h2&gt;&#xA;&lt;p&gt;This is the account that will be used by proxmox to send emails. Go to &lt;a href=&#34;https://myaccount.google.com/security&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;security settings&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-create-app-password-for-the-account&#34;&gt;3. Create app password for the account.&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Go to &lt;a href=&#34;https://security.google.com/settings/security/apppasswords&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App Passwords&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Select app: &lt;code&gt;Mail&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Select device: &lt;code&gt;Other&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Type in: &lt;code&gt;Proxmox&lt;/code&gt; or whatever you want here&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;4-setup-gmail-credentials&#34;&gt;4. Setup gmail credentials&lt;/h2&gt;&#xA;&lt;p&gt;Write gmail credentials to file and hash it. Again, make sure you are root.&lt;/p&gt;</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Proxmox on The Lennons Wiki</title>
+        <link>https://lennon101.github.io/tags/proxmox/</link>
+        <description>Recent content in Proxmox on The Lennons Wiki</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 04 Jun 2024 13:09:00 +1000</lastBuildDate><atom:link href="https://lennon101.github.io/tags/proxmox/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Proxmox Email Alerts Setup</title>
+        <link>https://lennon101.github.io/p/proxmox-email-alerts-setup/</link>
+        <pubDate>Tue, 04 Jun 2024 13:09:00 +1000</pubDate>
+        
+        <guid>https://lennon101.github.io/p/proxmox-email-alerts-setup/</guid>
+        <description>&lt;img src="https://lennon101.github.io/p/proxmox-email-alerts-setup/cover.png" alt="Featured image of post Proxmox Email Alerts Setup" /&gt;&lt;h2 id=&#34;1-install-mailutils&#34;&gt;1. Install mailutils
+&lt;/h2&gt;&lt;p&gt;SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&amp;rsquo;ll need.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;apt update
+apt install -y libsasl2-modules mailutils
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-enable-2fa-for-the-gmail-account&#34;&gt;2. Enable 2FA for the gmail account.
+&lt;/h2&gt;&lt;p&gt;This is the account that will be used by proxmox to send emails. Go to &lt;a class=&#34;link&#34; href=&#34;https://myaccount.google.com/security&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;security settings&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-create-app-password-for-the-account&#34;&gt;3. Create app password for the account.
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Go to &lt;a class=&#34;link&#34; href=&#34;https://security.google.com/settings/security/apppasswords&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;App Passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select app: &lt;code&gt;Mail&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Select device: &lt;code&gt;Other&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Type in: &lt;code&gt;Proxmox&lt;/code&gt; or whatever you want here&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4-setup-gmail-credentials&#34;&gt;4. Setup gmail credentials
+&lt;/h2&gt;&lt;p&gt;Write gmail credentials to file and hash it. Again, make sure you are root.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;smtp.gmail.com youremail@gmail.com:yourpassword&amp;#34; &amp;gt; /etc/postfix/sasl_passwd
+
+# chmod u=rw
+chmod 600 /etc/postfix/sasl_passwd
+
+# generate /etc/postfix/sasl_passwd.db
+postmap hash:/etc/postfix/sasl_passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5-proxmox-config&#34;&gt;5. Proxmox config
+&lt;/h2&gt;&lt;p&gt;Open the Postfix configuration file with editor of your choice.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nano /etc/postfix/main.cf
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;6-edit-maincf&#34;&gt;6. Edit main.cf
+&lt;/h2&gt;&lt;p&gt;Append the following to the end of the file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;relayhost = smtp.gmail.com:587
+smtp_use_tls = yes
+smtp_sasl_auth_enable = yes
+smtp_sasl_security_options =
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_tls_CAfile = /etc/ssl/certs/Entrust_Root_Certification_Authority.pem
+smtp_tls_session_cache_database = btree:/var/lib/postfix/smtp_tls_session_cache
+smtp_tls_session_cache_timeout = 3600s
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;: Comment out the existing line containing just &lt;code&gt;relayhost=&lt;/code&gt; since we are using this key in our configuration we just pasted in.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/proxmox-email-alerts-setup/relayhost.png&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;7-reload-postfix&#34;&gt;7. Reload postfix
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;```bash
+postfix reload
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;8-test-it-worked&#34;&gt;8. Test it worked
+&lt;/h2&gt;&lt;p&gt;Test to make sure everything is working with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;sample message&amp;#34; | mail -s &amp;#34;sample subject&amp;#34; anotheremail@gmail.com
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Credit: &lt;a class=&#34;link&#34; href=&#34;https://gist.github.com/tomdaley92&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tomdaley92&lt;/a&gt; &amp;ndash;&amp;gt; &lt;a class=&#34;link&#34; href=&#34;https://gist.github.com/tomdaley92/9315b9326d4589c9652ce0307c9c38a3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;original source&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

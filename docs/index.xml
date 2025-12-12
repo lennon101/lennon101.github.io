@@ -1,96 +1,331 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>The Lennons Wiki</title>
-    <link>https://lennon101.github.io/</link>
-    <description>Recent content on The Lennons Wiki</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lennon101.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://lennon101.github.io/about/</link>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/about/</guid>
-      <description>&lt;h1 id=&#34;about-the-lennons-wiki&#34;&gt;About The Lennons Wiki&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to my personal wiki and technical documentation hub!&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-this-site&#34;&gt;What is This Site?&lt;/h2&gt;&#xA;&lt;p&gt;This is a collection of guides, tutorials, and technical documentation that I&amp;rsquo;ve created while working on various projects. The goal is to share knowledge and help others who might encounter similar challenges.&lt;/p&gt;&#xA;&lt;h2 id=&#34;topics-covered&#34;&gt;Topics Covered&lt;/h2&gt;&#xA;&lt;h3 id=&#34;homelab--infrastructure&#34;&gt;Homelab &amp;amp; Infrastructure&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Proxmox virtualization setup and configuration&lt;/li&gt;&#xA;&lt;li&gt;Network storage and NAS security&lt;/li&gt;&#xA;&lt;li&gt;Self-hosted services and applications&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;iot--smart-home&#34;&gt;IoT &amp;amp; Smart Home&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Zigbee device integration and troubleshooting&lt;/li&gt;&#xA;&lt;li&gt;DIY electronics projects&lt;/li&gt;&#xA;&lt;li&gt;Home automation solutions&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;it--troubleshooting&#34;&gt;IT &amp;amp; Troubleshooting&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Windows system fixes and configurations&lt;/li&gt;&#xA;&lt;li&gt;General technical support guides&lt;/li&gt;&#xA;&lt;li&gt;Software and hardware troubleshooting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-i-created-this&#34;&gt;Why I Created This&lt;/h2&gt;&#xA;&lt;p&gt;I started this wiki to:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Proxmox Email Alerts Setup</title>
-      <link>https://lennon101.github.io/posts/proxmox-email-alerts-setup/</link>
-      <pubDate>Tue, 04 Jun 2024 13:09:00 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/proxmox-email-alerts-setup/</guid>
-      <description>&lt;h2 id=&#34;1-install-mailutils&#34;&gt;1. Install mailutils&lt;/h2&gt;&#xA;&lt;p&gt;SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&amp;rsquo;ll need.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;apt update&#xA;apt install -y libsasl2-modules mailutils&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-enable-2fa-for-the-gmail-account&#34;&gt;2. Enable 2FA for the gmail account.&lt;/h2&gt;&#xA;&lt;p&gt;This is the account that will be used by proxmox to send emails. Go to &lt;a href=&#34;https://myaccount.google.com/security&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;security settings&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-create-app-password-for-the-account&#34;&gt;3. Create app password for the account.&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Go to &lt;a href=&#34;https://security.google.com/settings/security/apppasswords&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App Passwords&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Select app: &lt;code&gt;Mail&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Select device: &lt;code&gt;Other&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Type in: &lt;code&gt;Proxmox&lt;/code&gt; or whatever you want here&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;4-setup-gmail-credentials&#34;&gt;4. Setup gmail credentials&lt;/h2&gt;&#xA;&lt;p&gt;Write gmail credentials to file and hash it. Again, make sure you are root.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Securing Your Nas Against Ransomware</title>
-      <link>https://lennon101.github.io/posts/securing-your-nas/</link>
-      <pubDate>Tue, 14 May 2024 10:39:36 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/securing-your-nas/</guid>
-      <description>&lt;h2 id=&#34;threat&#34;&gt;Threat&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m on a &lt;a href=&#34;https://www.reddit.com/r/synology/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;synology sub-reddit&lt;/a&gt;&#xD;&#xA; page and I see posts like this every couple of months and it terrifies me:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/posts/securing-your-nas/attack.png&#34; width=&#34;1000&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;This is an example of Ransomware.&#xA;Ransomware is a type of malicious software designed to block access to a computer system or files until a sum of money, or &amp;ldquo;ransom,&amp;rdquo; is paid. It typically works by encrypting the victim&amp;rsquo;s files or locking them behind a password, rendering them inaccessible. Once the ransomware is activated, the victim is presented with instructions on how to pay the ransom, often in cryptocurrency, in exchange for a decryption key or password. Ransomware attacks can be devastating for individuals and organizations, causing data loss, financial harm, and disrupting normal operations. Cybersecurity experts recommend regularly backing up data, maintaining updated software, and exercising caution when clicking on links or downloading files to prevent falling victim to ransomware attacks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Windows 10 Search Bar Not Loading</title>
-      <link>https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/</link>
-      <pubDate>Wed, 08 May 2024 11:05:00 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/</guid>
-      <description>&lt;h2 id=&#34;what-happened&#34;&gt;What happened&lt;/h2&gt;&#xA;&lt;p&gt;The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window.&#xA;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/empty-search-bar.png&#34; width=&#34;500&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-fix&#34;&gt;The fix&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Right click on the windows key and tap &lt;strong&gt;Run&lt;/strong&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/open-run.png&#34; width=&#34;300&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open the Registery Editor by typing &lt;strong&gt;regedit&lt;/strong&gt; and tapping ok&#xA;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/open-regedit.png&#34; width=&#34;400&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Navigate to:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/search.png&#34; width=&#34;600&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value. Name the new value:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BingSearchEnabled&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/bing-enabled.png&#34; width=&#34;600&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Double-click the new BingSearchEnabled value to open its properties dialog. The number in the “Value data” box should already be 0. Just ensure it’s still 0. Click OK to continue.&#xA;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/posts/windows-10-search-bar-not-loading-fix/edit-word.png&#34; width=&#34;600&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide</title>
-      <link>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</link>
-      <pubDate>Tue, 07 May 2024 16:05:21 +1000</pubDate>
-      <guid>https://lennon101.github.io/posts/tuya-zigbee-valve-power-supply-conversion/</guid>
-      <description>&lt;h2 id=&#34;10-introduction&#34;&gt;1.0 Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step-by-step.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lennon101.github.io/search/_index.es/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.es/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lennon101.github.io/search/_index.fr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.fr/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lennon101.github.io/search/_index.hi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.hi/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lennon101.github.io/search/_index.jp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.jp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lennon101.github.io/search/_index.pl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.pl/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lennon101.github.io/search/_index.ru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.ru/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://lennon101.github.io/search/_index.zh-cn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lennon101.github.io/search/_index.zh-cn/</guid>
-      <description></description>
-    </item>
-  </channel>
+    <channel>
+        <title>The Lennons Wiki</title>
+        <link>https://lennon101.github.io/</link>
+        <description>Recent content on The Lennons Wiki</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lennon101.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://lennon101.github.io/about/</link>
+        <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://lennon101.github.io/about/</guid>
+        <description>&lt;h1 id=&#34;about-the-lennons-wiki&#34;&gt;About The Lennons Wiki
+&lt;/h1&gt;&lt;p&gt;Welcome to my personal wiki and technical documentation hub!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-this-site&#34;&gt;What is This Site?
+&lt;/h2&gt;&lt;p&gt;This is a collection of guides, tutorials, and technical documentation that I&amp;rsquo;ve created while working on various projects. The goal is to share knowledge and help others who might encounter similar challenges.&lt;/p&gt;
+&lt;h2 id=&#34;topics-covered&#34;&gt;Topics Covered
+&lt;/h2&gt;&lt;h3 id=&#34;homelab--infrastructure&#34;&gt;Homelab &amp;amp; Infrastructure
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Proxmox virtualization setup and configuration&lt;/li&gt;
+&lt;li&gt;Network storage and NAS security&lt;/li&gt;
+&lt;li&gt;Self-hosted services and applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;iot--smart-home&#34;&gt;IoT &amp;amp; Smart Home
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Zigbee device integration and troubleshooting&lt;/li&gt;
+&lt;li&gt;DIY electronics projects&lt;/li&gt;
+&lt;li&gt;Home automation solutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;it--troubleshooting&#34;&gt;IT &amp;amp; Troubleshooting
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Windows system fixes and configurations&lt;/li&gt;
+&lt;li&gt;General technical support guides&lt;/li&gt;
+&lt;li&gt;Software and hardware troubleshooting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-i-created-this&#34;&gt;Why I Created This
+&lt;/h2&gt;&lt;p&gt;I started this wiki to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Document solutions to problems I&amp;rsquo;ve encountered&lt;/li&gt;
+&lt;li&gt;Create a reference for my future self&lt;/li&gt;
+&lt;li&gt;Share knowledge with the community&lt;/li&gt;
+&lt;li&gt;Practice technical writing and documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch
+&lt;/h2&gt;&lt;p&gt;If you find any errors or have suggestions for improvements, feel free to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open an issue on the &lt;a class=&#34;link&#34; href=&#34;https://github.com/lennon101/lennon101.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Submit a pull request with corrections or enhancements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;site-information&#34;&gt;Site Information
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Built with&lt;/strong&gt;: Hugo static site generator&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Tailwind&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hosted on&lt;/strong&gt;: GitHub Pages&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Last updated&lt;/strong&gt;: December 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Thanks for visiting! I hope you find the content useful.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Proxmox Email Alerts Setup</title>
+        <link>https://lennon101.github.io/p/proxmox-email-alerts-setup/</link>
+        <pubDate>Tue, 04 Jun 2024 13:09:00 +1000</pubDate>
+        
+        <guid>https://lennon101.github.io/p/proxmox-email-alerts-setup/</guid>
+        <description>&lt;img src="https://lennon101.github.io/p/proxmox-email-alerts-setup/cover.png" alt="Featured image of post Proxmox Email Alerts Setup" /&gt;&lt;h2 id=&#34;1-install-mailutils&#34;&gt;1. Install mailutils
+&lt;/h2&gt;&lt;p&gt;SSH into proxmox node and become root user. Run the following commands to download extra software dependencies we&amp;rsquo;ll need.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;apt update
+apt install -y libsasl2-modules mailutils
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-enable-2fa-for-the-gmail-account&#34;&gt;2. Enable 2FA for the gmail account.
+&lt;/h2&gt;&lt;p&gt;This is the account that will be used by proxmox to send emails. Go to &lt;a class=&#34;link&#34; href=&#34;https://myaccount.google.com/security&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;security settings&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-create-app-password-for-the-account&#34;&gt;3. Create app password for the account.
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Go to &lt;a class=&#34;link&#34; href=&#34;https://security.google.com/settings/security/apppasswords&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;App Passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select app: &lt;code&gt;Mail&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Select device: &lt;code&gt;Other&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Type in: &lt;code&gt;Proxmox&lt;/code&gt; or whatever you want here&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4-setup-gmail-credentials&#34;&gt;4. Setup gmail credentials
+&lt;/h2&gt;&lt;p&gt;Write gmail credentials to file and hash it. Again, make sure you are root.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;smtp.gmail.com youremail@gmail.com:yourpassword&amp;#34; &amp;gt; /etc/postfix/sasl_passwd
+
+# chmod u=rw
+chmod 600 /etc/postfix/sasl_passwd
+
+# generate /etc/postfix/sasl_passwd.db
+postmap hash:/etc/postfix/sasl_passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5-proxmox-config&#34;&gt;5. Proxmox config
+&lt;/h2&gt;&lt;p&gt;Open the Postfix configuration file with editor of your choice.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nano /etc/postfix/main.cf
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;6-edit-maincf&#34;&gt;6. Edit main.cf
+&lt;/h2&gt;&lt;p&gt;Append the following to the end of the file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;relayhost = smtp.gmail.com:587
+smtp_use_tls = yes
+smtp_sasl_auth_enable = yes
+smtp_sasl_security_options =
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_tls_CAfile = /etc/ssl/certs/Entrust_Root_Certification_Authority.pem
+smtp_tls_session_cache_database = btree:/var/lib/postfix/smtp_tls_session_cache
+smtp_tls_session_cache_timeout = 3600s
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;: Comment out the existing line containing just &lt;code&gt;relayhost=&lt;/code&gt; since we are using this key in our configuration we just pasted in.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/proxmox-email-alerts-setup/relayhost.png&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;7-reload-postfix&#34;&gt;7. Reload postfix
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;```bash
+postfix reload
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;8-test-it-worked&#34;&gt;8. Test it worked
+&lt;/h2&gt;&lt;p&gt;Test to make sure everything is working with:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;sample message&amp;#34; | mail -s &amp;#34;sample subject&amp;#34; anotheremail@gmail.com
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Credit: &lt;a class=&#34;link&#34; href=&#34;https://gist.github.com/tomdaley92&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tomdaley92&lt;/a&gt; &amp;ndash;&amp;gt; &lt;a class=&#34;link&#34; href=&#34;https://gist.github.com/tomdaley92/9315b9326d4589c9652ce0307c9c38a3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;original source&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Securing Your Nas Against Ransomware</title>
+        <link>https://lennon101.github.io/p/securing-your-nas-against-ransomware/</link>
+        <pubDate>Tue, 14 May 2024 10:39:36 +1000</pubDate>
+        
+        <guid>https://lennon101.github.io/p/securing-your-nas-against-ransomware/</guid>
+        <description>&lt;img src="https://lennon101.github.io/p/securing-your-nas-against-ransomware/attack.png" alt="Featured image of post Securing Your Nas Against Ransomware" /&gt;&lt;h2 id=&#34;threat&#34;&gt;Threat
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m on a &lt;a class=&#34;link&#34; href=&#34;https://www.reddit.com/r/synology/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;synology sub-reddit&lt;/a&gt; page and I see posts like this every couple of months and it terrifies me:&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/securing-your-nas-against-ransomware/attack.png&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is an example of Ransomware.
+Ransomware is a type of malicious software designed to block access to a computer system or files until a sum of money, or &amp;ldquo;ransom,&amp;rdquo; is paid. It typically works by encrypting the victim&amp;rsquo;s files or locking them behind a password, rendering them inaccessible. Once the ransomware is activated, the victim is presented with instructions on how to pay the ransom, often in cryptocurrency, in exchange for a decryption key or password. Ransomware attacks can be devastating for individuals and organizations, causing data loss, financial harm, and disrupting normal operations. Cybersecurity experts recommend regularly backing up data, maintaining updated software, and exercising caution when clicking on links or downloading files to prevent falling victim to ransomware attacks.&lt;/p&gt;
+&lt;h2 id=&#34;mitigation&#34;&gt;Mitigation
+&lt;/h2&gt;&lt;p&gt;So, in case you havn&amp;rsquo;t already, here&amp;rsquo;s a list I&amp;rsquo;ve put together that I &lt;strong&gt;highly&lt;/strong&gt; recommend you follow ASAP:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Secure your network &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/posts/securing-your-nas/#test&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;:Expand for more detail&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Disable/deactivate the default admin account.
+&lt;ul&gt;
+&lt;li&gt;Create a second admin account but don&amp;rsquo;t use a username that references it&amp;rsquo;s admin status eg &lt;code&gt;admin-user&lt;/code&gt; or &lt;code&gt;admin-acct&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make sure you use a User account when accessing your nas.
+&lt;ul&gt;
+&lt;li&gt;Do not use your new admin account for any other use except admin tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Enable 2FA.&lt;/li&gt;
+&lt;li&gt;Use very secure passwords:
+&lt;ul&gt;
+&lt;li&gt;Never use the same password twice!&lt;/li&gt;
+&lt;li&gt;Use tools like &lt;a class=&#34;link&#34; href=&#34;https://1password.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1Password&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://www.keepersecurity.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Keeper&lt;/a&gt; to generate unique passwords and store them safely&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Instead of &lt;a class=&#34;link&#34; href=&#34;https://quickconnect.to/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Synology QuickConnect&lt;/a&gt; or QNAP&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.qnap.com/en-au/software/myqnapcloud&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EasyConnect&lt;/a&gt; use a VPN or &lt;a class=&#34;link&#34; href=&#34;https://tailscale.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tailscale&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Enable the NAS firewall.&lt;/li&gt;
+&lt;li&gt;Force 2FA for all other NAS users.&lt;/li&gt;
+&lt;li&gt;Check every password requirement.&lt;/li&gt;
+&lt;li&gt;Set login attempt timeouts to something like 2-3 failed logins = suspend for 4 hours or something.&lt;/li&gt;
+&lt;li&gt;Don’t reuse passwords.&lt;/li&gt;
+&lt;li&gt;Consider using AWS Glacier backups (or review which cold storage solution is best for you). It’s painfully slow but really cheap.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;test&#34;&gt;test
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Enable and make use of the firewall on your router.&lt;/li&gt;
+&lt;li&gt;Port-forward the bare minimum on your router. Make use of reverse proxies through port 443 etc if needed.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Windows 10 Search Bar Not Loading</title>
+        <link>https://lennon101.github.io/p/windows-10-search-bar-not-loading/</link>
+        <pubDate>Wed, 08 May 2024 11:05:00 +1000</pubDate>
+        
+        <guid>https://lennon101.github.io/p/windows-10-search-bar-not-loading/</guid>
+        <description>&lt;h2 id=&#34;what-happened&#34;&gt;What happened
+&lt;/h2&gt;&lt;p&gt;The Search menu on my Windows 10 suddenly stopped working. When I clicked the Search icon or type something in the Start menu, it just shows a blank search window.
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/empty-search-bar.png&#34; width=&#34;500&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;the-fix&#34;&gt;The fix
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Right click on the windows key and tap &lt;strong&gt;Run&lt;/strong&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/open-run.png&#34; width=&#34;300&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the Registery Editor by typing &lt;strong&gt;regedit&lt;/strong&gt; and tapping ok
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/open-regedit.png&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search
+&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/search.png&#34; width=&#34;600&#34;&gt;
+&lt;/figure&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Right-click the Search icon and choose New &amp;gt; DWORD (32-bit) Value. Name the new value:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BingSearchEnabled
+&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/bing-enabled.png&#34; width=&#34;600&#34;&gt;
+&lt;/figure&gt;
+
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Double-click the new BingSearchEnabled value to open its properties dialog. The number in the “Value data” box should already be 0. Just ensure it’s still 0. Click OK to continue.
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/edit-word.png&#34; width=&#34;600&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Below &lt;code&gt;BingSearchEnabled&lt;/code&gt;, you should see &lt;code&gt;CortanaConsent&lt;/code&gt;. Double-click this value to open its properties dialog. Change its “Value Data” box to “0” aswell.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note Well:&lt;/strong&gt;
+If you don’t see &lt;code&gt;CortanaConsent&lt;/code&gt;, create it by following the same steps you used to create &lt;code&gt;BingSearchEnabled&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/cortana-consent.png&#34; width=&#34;600&#34;&gt;
+&lt;/figure&gt;
+
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Restart &lt;code&gt;Explorer.Exe&lt;/code&gt; by opening the &lt;code&gt;TaskManager&lt;/code&gt;, right clicking on Windows Explorer, and tapping restart. The Windows Search Bar should now return to a working state&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/windows-10-search-bar-not-loading/restart-explorer.png&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
+
+</description>
+        </item>
+        <item>
+        <title>Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide</title>
+        <link>https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/</link>
+        <pubDate>Tue, 07 May 2024 16:05:21 +1000</pubDate>
+        
+        <guid>https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/</guid>
+        <description>&lt;img src="https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller.png" alt="Featured image of post Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide" /&gt;&lt;h2 id=&#34;10-introduction&#34;&gt;1.0 Introduction
+&lt;/h2&gt;&lt;p&gt;This is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&amp;rsquo;ll walk you through the process, step-by-step.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller.png&#34; width=&#34;300&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;20-why-upgrade-to-regulated-power-supply&#34;&gt;2.0 Why Upgrade to Regulated Power Supply?
+&lt;/h2&gt;&lt;p&gt;This was in response to the batteries of these devices draining very quickly and requiring frequent replacements. Upgrading to a regulated power supply ensures a stable and continuous power source, reducing the need for constant maintenance and enhancing the overall reliability of your Zigbee irrigation system.&lt;/p&gt;
+&lt;h2 id=&#34;30-calculating-power-requirements&#34;&gt;3.0 Calculating Power Requirements
+&lt;/h2&gt;&lt;p&gt;Before diving into the conversion process, it&amp;rsquo;s essential to have a basic understanding of how Zigbee irrigation valves work and the power requirements associated with them.
+Each device is powered by 4x AA batteries in series. Each AA battery is 1.5V at 100%, therefore, the total voltage needed for this device is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;total voltage = 4 x 1.5V
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Therefore:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;total voltage = 6v
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;31-current-amps-requirement&#34;&gt;3.1 Current (amps) requirement:
+&lt;/h3&gt;&lt;p&gt;A typical AA battery has a peak current of over 2A. But I know (just from my own experience) that these zigbee devices won&amp;rsquo;t be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous).&lt;/p&gt;
+&lt;h2 id=&#34;40-materials-needed&#34;&gt;4.0 Materials Needed
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;An AC to DC power supply with atleast 6v and 1amp output. Most power supplies are either 5V or 12V. A 5v supply will be sufficient but if you have a 12v supply, you will need a voltage regulator shown in step 2 below. A typical looking power supply is pictured below
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/power-supply.png&#34; width=&#34;200&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A linear regulator - only needed if you your power supply has an output greater than 6v. A good example is the LM317 Adjustable Voltage Regulator Power Supply (see image below). Just go to AliExpress and search &lt;code&gt;LM317 Breakout Board&lt;/code&gt;. An example is shown below.
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/lm317.png&#34; width=&#34;100&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A small plastic container to store the linear regulator in (if you need one).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A multimetre to check the voltage&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;50-step-by-step-process&#34;&gt;5.0 Step-by-Step Process
+&lt;/h2&gt;&lt;h3 id=&#34;51-wiring-diagram&#34;&gt;5.1 Wiring diagram
+&lt;/h3&gt;&lt;p&gt;Shown below is the wiring diagram for the modified and regulated power supply. If you are using a regulator to change the voltage, you will need to tune the regulator output to the required 6v needed for this unit. Use a multimeter to do so.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/modified-power-supply.png&#34; width=&#34;700&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;52-disassembling-the-device&#34;&gt;5.2 Disassembling the device
+&lt;/h3&gt;&lt;p&gt;Begin the conversion process by carefully disassembling the Zigbee irrigation valve. Take note of the existing components and their placements.
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/steps/combined-1.png&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;53-cut-the-power-and-gnd-wires&#34;&gt;5.3 Cut the Power and GND wires
+&lt;/h3&gt;&lt;p&gt;Cut the power and gnd wires and solder longer wires so there is enoug length to poke through a hole in the
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/steps/wires-cut.JPEG&#34; width=&#34;300&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;54-modifying-the-device&#34;&gt;5.4 Modifying the device
+&lt;/h3&gt;&lt;p&gt;Modify the device to accommodate the regulated power supply or store the power supply in it&amp;rsquo;s own plastic container. This step may involve rewiring and integrating the new power source seamlessly.&lt;/p&gt;
+&lt;h3 id=&#34;55-assembling-the-system&#34;&gt;5.5 Assembling the System
+&lt;/h3&gt;&lt;p&gt;Put everything back together, ensuring all components are properly connected. I found that the best way to do this was using a drill to cut a small hole in the side of the plastic housing and poking the new power supply wires through the housing that way. You can use hot glue or silicon to make the housing waterproof again :)
+&lt;figure&gt;&lt;img src=&#34;https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/steps/assembled.png&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://lennon101.github.io/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://lennon101.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://lennon101.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://lennon101.github.io/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>

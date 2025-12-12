@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on The Lennons Wiki</title>
+        <link>https://lennon101.github.io/page/</link>
+        <description>Recent content in Pages on The Lennons Wiki</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lennon101.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://lennon101.github.io/about/</link>
+        <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://lennon101.github.io/about/</guid>
+        <description>&lt;h1 id=&#34;about-the-lennons-wiki&#34;&gt;About The Lennons Wiki
+&lt;/h1&gt;&lt;p&gt;Welcome to my personal wiki and technical documentation hub!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-this-site&#34;&gt;What is This Site?
+&lt;/h2&gt;&lt;p&gt;This is a collection of guides, tutorials, and technical documentation that I&amp;rsquo;ve created while working on various projects. The goal is to share knowledge and help others who might encounter similar challenges.&lt;/p&gt;
+&lt;h2 id=&#34;topics-covered&#34;&gt;Topics Covered
+&lt;/h2&gt;&lt;h3 id=&#34;homelab--infrastructure&#34;&gt;Homelab &amp;amp; Infrastructure
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Proxmox virtualization setup and configuration&lt;/li&gt;
+&lt;li&gt;Network storage and NAS security&lt;/li&gt;
+&lt;li&gt;Self-hosted services and applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;iot--smart-home&#34;&gt;IoT &amp;amp; Smart Home
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Zigbee device integration and troubleshooting&lt;/li&gt;
+&lt;li&gt;DIY electronics projects&lt;/li&gt;
+&lt;li&gt;Home automation solutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;it--troubleshooting&#34;&gt;IT &amp;amp; Troubleshooting
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Windows system fixes and configurations&lt;/li&gt;
+&lt;li&gt;General technical support guides&lt;/li&gt;
+&lt;li&gt;Software and hardware troubleshooting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-i-created-this&#34;&gt;Why I Created This
+&lt;/h2&gt;&lt;p&gt;I started this wiki to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Document solutions to problems I&amp;rsquo;ve encountered&lt;/li&gt;
+&lt;li&gt;Create a reference for my future self&lt;/li&gt;
+&lt;li&gt;Share knowledge with the community&lt;/li&gt;
+&lt;li&gt;Practice technical writing and documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch
+&lt;/h2&gt;&lt;p&gt;If you find any errors or have suggestions for improvements, feel free to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open an issue on the &lt;a class=&#34;link&#34; href=&#34;https://github.com/lennon101/lennon101.github.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Submit a pull request with corrections or enhancements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;site-information&#34;&gt;Site Information
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Built with&lt;/strong&gt;: Hugo static site generator&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt;: Tailwind&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hosted on&lt;/strong&gt;: GitHub Pages&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Last updated&lt;/strong&gt;: December 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Thanks for visiting! I hope you find the content useful.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://lennon101.github.io/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://lennon101.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://lennon101.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://lennon101.github.io/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

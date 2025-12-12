@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1.0 Introduction\rThis is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&rsquo;ll walk you through the process, step-by-step.\nTuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller\n">
+<title>Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide</title>
+
+<link rel='canonical' href='https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/'>
+
+<link rel="stylesheet" href="/scss/style.min.4d36f8dc1fd48129e1635deb4b8eb2870fa09474f7280c4cb606d40b2526994b.css"><meta property='og:title' content="Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide">
+<meta property='og:description' content="1.0 Introduction\rThis is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&rsquo;ll walk you through the process, step-by-step.\nTuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller\n">
+<meta property='og:url' content='https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/'>
+<meta property='og:site_name' content='The Lennons Wiki'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='zigbee' /><meta property='article:tag' content='wiki' /><meta property='article:published_time' content='2024-05-07T16:05:21&#43;10:00'/><meta property='article:modified_time' content='2024-05-07T16:05:21&#43;10:00'/><meta property='og:image' content='https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller.png' />
+<meta name="twitter:title" content="Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide">
+<meta name="twitter:description" content="1.0 Introduction\rThis is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&rsquo;ll walk you through the process, step-by-step.\nTuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller.png' />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M1GT3H8EL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4M1GT3H8EL');
+        }
+      </script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_d32a202c6b6ce4d.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">📚</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">The Lennons Wiki</a></h1>
+            <h2 class="site-description">A collection of technical guides and documentation</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#10-introduction">1.0 Introduction</a></li>
+    <li><a href="#20-why-upgrade-to-regulated-power-supply">2.0 Why Upgrade to Regulated Power Supply?</a></li>
+    <li><a href="#30-calculating-power-requirements">3.0 Calculating Power Requirements</a>
+      <ul>
+        <li><a href="#31-current-amps-requirement">3.1 Current (amps) requirement:</a></li>
+      </ul>
+    </li>
+    <li><a href="#40-materials-needed">4.0 Materials Needed</a></li>
+    <li><a href="#50-step-by-step-process">5.0 Step-by-Step Process</a>
+      <ul>
+        <li><a href="#51-wiring-diagram">5.1 Wiring diagram</a></li>
+        <li><a href="#52-disassembling-the-device">5.2 Disassembling the device</a></li>
+        <li><a href="#53-cut-the-power-and-gnd-wires">5.3 Cut the Power and GND wires</a></li>
+        <li><a href="#54-modifying-the-device">5.4 Modifying the device</a></li>
+        <li><a href="#55-assembling-the-system">5.5 Assembling the System</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/">
+                <img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller_hu_3e9067706971a86b.png"
+                        srcset="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller_hu_3e9067706971a86b.png 800w, /p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller_hu_8bfda289b0090d0c.png 1600w"
+                        width="800" 
+                        height="741" 
+                        loading="lazy"
+                        alt="Featured image of post Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/home-automation/" >
+                Home Automation
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/">Tuya Zigbee Valve Power Supply Conversion: A Step-by-Step Guide</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2024-05-07T16:05:21&#43;10:00'>May 07, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="10-introduction">1.0 Introduction
+</h2><p>This is a short blog post containing a step-by-step guide to convert the Tuya Zigbee Valve battery power supply to a DC/Mains power supply. This upgrade means you no longer need to worry about batteries draining as the device will have a continuous power source for your smart irrigation system. In this guide, I&rsquo;ll walk you through the process, step-by-step.</p>
+<p><a class="link" href="https://www.aliexpress.com/item/1005005196816776.html?spm=a2g0o.order_list.order_list_main.40.14971802Z6sJ8Y"  target="_blank" rel="noopener"
+    >Tuya Zigbee Smart Watering Timer Smart Sprinkler Drip Irrigation System Built-in Water Flow Recorder Water Controller</a></p>
+<figure><img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/tuya-zigbee-valve-controller.png" width="300">
+</figure>
+
+<h2 id="20-why-upgrade-to-regulated-power-supply">2.0 Why Upgrade to Regulated Power Supply?
+</h2><p>This was in response to the batteries of these devices draining very quickly and requiring frequent replacements. Upgrading to a regulated power supply ensures a stable and continuous power source, reducing the need for constant maintenance and enhancing the overall reliability of your Zigbee irrigation system.</p>
+<h2 id="30-calculating-power-requirements">3.0 Calculating Power Requirements
+</h2><p>Before diving into the conversion process, it&rsquo;s essential to have a basic understanding of how Zigbee irrigation valves work and the power requirements associated with them.
+Each device is powered by 4x AA batteries in series. Each AA battery is 1.5V at 100%, therefore, the total voltage needed for this device is:</p>
+<pre tabindex="0"><code>total voltage = 4 x 1.5V
+</code></pre><p>Therefore:</p>
+<pre tabindex="0"><code>total voltage = 6v
+</code></pre><h3 id="31-current-amps-requirement">3.1 Current (amps) requirement:
+</h3><p>A typical AA battery has a peak current of over 2A. But I know (just from my own experience) that these zigbee devices won&rsquo;t be drawing that much. So lets say approx 1amp max current during peak demands (and that is being very generous).</p>
+<h2 id="40-materials-needed">4.0 Materials Needed
+</h2><ol>
+<li>
+<p>An AC to DC power supply with atleast 6v and 1amp output. Most power supplies are either 5V or 12V. A 5v supply will be sufficient but if you have a 12v supply, you will need a voltage regulator shown in step 2 below. A typical looking power supply is pictured below
+<figure><img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/power-supply.png" width="200">
+</figure>
+</p>
+</li>
+<li>
+<p>A linear regulator - only needed if you your power supply has an output greater than 6v. A good example is the LM317 Adjustable Voltage Regulator Power Supply (see image below). Just go to AliExpress and search <code>LM317 Breakout Board</code>. An example is shown below.
+<figure><img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/lm317.png" width="100">
+</figure>
+</p>
+</li>
+<li>
+<p>A small plastic container to store the linear regulator in (if you need one).</p>
+</li>
+<li>
+<p>A multimetre to check the voltage</p>
+</li>
+</ol>
+<h2 id="50-step-by-step-process">5.0 Step-by-Step Process
+</h2><h3 id="51-wiring-diagram">5.1 Wiring diagram
+</h3><p>Shown below is the wiring diagram for the modified and regulated power supply. If you are using a regulator to change the voltage, you will need to tune the regulator output to the required 6v needed for this unit. Use a multimeter to do so.</p>
+<figure><img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/modified-power-supply.png" width="700">
+</figure>
+
+<h3 id="52-disassembling-the-device">5.2 Disassembling the device
+</h3><p>Begin the conversion process by carefully disassembling the Zigbee irrigation valve. Take note of the existing components and their placements.
+<figure><img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/steps/combined-1.png" width="1000">
+</figure>
+</p>
+<h3 id="53-cut-the-power-and-gnd-wires">5.3 Cut the Power and GND wires
+</h3><p>Cut the power and gnd wires and solder longer wires so there is enoug length to poke through a hole in the
+<figure><img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/steps/wires-cut.JPEG" width="300">
+</figure>
+</p>
+<h3 id="54-modifying-the-device">5.4 Modifying the device
+</h3><p>Modify the device to accommodate the regulated power supply or store the power supply in it&rsquo;s own plastic container. This step may involve rewiring and integrating the new power source seamlessly.</p>
+<h3 id="55-assembling-the-system">5.5 Assembling the System
+</h3><p>Put everything back together, ensuring all components are properly connected. I found that the best way to do this was using a drill to cut a small hole in the side of the plastic housing and poking the new power supply wires through the housing that way. You can use hot glue or silicon to make the housing waterproof again :)
+<figure><img src="/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/steps/assembled.png" width="1000">
+</figure>
+</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/zigbee/">Zigbee</a>
+        
+            <a href="/tags/wiki/">Wiki</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2023 - 
+        
+        2025 The Lennons Wiki
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
