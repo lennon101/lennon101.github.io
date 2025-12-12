@@ -1,6 +1,6 @@
 baseURL = 'https://lennon101.github.io/'
 languageCode = 'en-us'
-title = 'The Lennons Wiki'
+title = "Lenno's Space"
 theme = "hugo-theme-stack"
 publishDir = "docs"
 defaultContentLanguage = "en"
@@ -25,6 +25,7 @@ series = "series"
 mainSections = ["post"]
 featuredImageField = "image"
 rssFullContent = true
+favicon = "avatar.png"
 
 [params.footer]
 since = 2023
@@ -34,8 +35,8 @@ published = "Jan 02, 2006"
 lastUpdated = "Jan 02, 2006 15:04 MST"
 
 [params.sidebar]
-emoji = "📚"
-subtitle = "A collection of technical guides and documentation"
+emoji = "🤗"
+subtitle = "A collection of personal blogs and technical guides"
 
 [params.sidebar.avatar]
 enabled = true
