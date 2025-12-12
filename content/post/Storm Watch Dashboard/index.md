@@ -5,6 +5,7 @@ date: 2025-08-01
 categories: ["wiki"]
 tags: ["Home Automation"]
 draft: false
+image: imgs/dashboard.png
 ---
 
 # Storm Watch Dashboard  
@@ -26,12 +27,12 @@ This Home Assistant dashboard, **Storm Watch**, is designed to monitor weather c
 
 This dashboard is built using Lovelace with a combination of built-in cards and custom integrations.  
 
-<img width="1443" alt="Screenshot 2025-02-03 at 7 59 47 am" src="https://gist.github.com/user-attachments/assets/8daff51e-82dd-4edd-a340-a627eb132e80" />
+![Dashboard Overview](/imgs/dashboard.png)
 
 ---
 Below is the yaml used to create this card: 
 
-<img src="https://gist.github.com/user-attachments/assets/0e34ef35-5f34-4c20-b7b9-5159e5b17c40" alt="image" width="200"/>
+![Daily Rain](/imgs/daily-totals.png)
 
 
 ```yaml
@@ -52,7 +53,8 @@ The second graph beside it requires a statitics sensor to calculate a rolling 24
 5. Set the **Max age** to 24hrs and leave everything else alone. See below. 
 
 
-<img src="https://gist.github.com/user-attachments/assets/bf9acf60-707a-4e4d-8c86-732cb10fdb0a" alt="image" width="200"/>
+![Statistics Sensor](/imgs/stats.png)
+
 
 Now use this new statistics sensor in this yaml:
 
@@ -69,7 +71,7 @@ icon: mdi:clock-time-nine-outline
 ---
 The Column plot uses a custom integration called ApexCharts. Install it using **HACS** then add the following yaml to your dashboard 
 
-<img src="https://gist.github.com/user-attachments/assets/21fbec59-aead-440b-91d6-7412b2744e24" alt="image" width="200"/>
+![Daily Rain Column Plot](/imgs/daily-rain.png)
 
 ```yaml
       type: custom:apexcharts-card
@@ -106,7 +108,7 @@ The Column plot uses a custom integration called ApexCharts. Install it using **
 ---
 For the Rain Event plot I used another custom integration called **plotly-graph**. Again you get this from **HACS**. The yaml is below. 
 
-<img src="https://gist.github.com/user-attachments/assets/ac403179-0a44-41d7-bf63-33519535d3b4" alt="image" width="200"/>
+![Rain Event Plot](/imgs/rain-event.png)
 
 ```yaml
 type: custom:plotly-graph
@@ -141,7 +143,7 @@ layout:
 ---
 The card below was created using a combination of Mushroom Template and Mushroom Entity Cards. You can get the mushroom cards from HACS as well :)
 
-<img src="https://gist.github.com/user-attachments/assets/d2dda79c-0890-4ba3-8d53-1584734f5062" alt="image" width="200"/>
+![Rain Event Totals](/imgs/rain-event-pt2.png)
 
 To get the details of when the rain event began and how long it has been going for, you'll need to create three extra sensors. This is shown below. Unlike the other sensors, these are template sensors. Take note! For more information on these **Trigger Based Template Sensors** see the official HA documentation here: [Trigger Based Template Sensors](https://www.home-assistant.io/integrations/template/#trigger-based-template-binary-sensors-buttons-images-numbers-selects-and-sensors)
 

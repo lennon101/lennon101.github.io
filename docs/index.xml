@@ -265,7 +265,7 @@ Fifteen hours is a long time to be out on your feet. Add cold winds, nearly 4000
         <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
         
         <guid>https://lennon101.github.io/p/storm-watch-dashboard/</guid>
-        <description>&lt;h1 id=&#34;storm-watch-dashboard&#34;&gt;Storm Watch Dashboard
+        <description>&lt;img src="https://lennon101.github.io/p/storm-watch-dashboard/imgs/dashboard.png" alt="Featured image of post Storm Watch Dashboard" /&gt;&lt;h1 id=&#34;storm-watch-dashboard&#34;&gt;Storm Watch Dashboard
 &lt;/h1&gt;&lt;p&gt;This Home Assistant dashboard, &lt;strong&gt;Storm Watch&lt;/strong&gt;, is designed to monitor weather conditions in real time. Living in Townsville, I built this dashboard to keep an eye on the intense rainfall we&amp;rsquo;re experiencing.&lt;/p&gt;
 &lt;h2 id=&#34;data-sources&#34;&gt;Data Sources
 &lt;/h2&gt;&lt;ul&gt;
@@ -280,10 +280,36 @@ Fifteen hours is a long time to be out on your feet. Add cold winds, nearly 4000
 &lt;/ul&gt;
 &lt;h2 id=&#34;home-assistant-setup&#34;&gt;Home Assistant Setup
 &lt;/h2&gt;&lt;p&gt;This dashboard is built using Lovelace with a combination of built-in cards and custom integrations.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/dashboard.png&#34;
+	width=&#34;2886&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/dashboard_hu_e78e46410f891ce8.png 480w, https://lennon101.github.io/p/storm-watch-dashboard/imgs/dashboard_hu_d1bffcc67ea1c7d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Dashboard Overview&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;481px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Below is the yaml used to create this card:&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/daily-totals.png&#34;
+	width=&#34;944&#34;
+	height=&#34;1146&#34;
+	srcset=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/daily-totals_hu_3f04434debae3db4.png 480w, https://lennon101.github.io/p/storm-watch-dashboard/imgs/daily-totals_hu_1f7f4e03b6b7f4e9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Daily Rain&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;82&#34;
+		data-flex-basis=&#34;197px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;graph&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;line&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;sensor&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;entity&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;sensor.gw1100c_hourly_rain_rate&lt;/span&gt;
@@ -297,7 +323,20 @@ Fifteen hours is a long time to be out on your feet. Add cold winds, nearly 4000
 &lt;li&gt;Select the &lt;strong&gt;Change&lt;/strong&gt; Statistics characters (calculates the delta between the newest and oldest data)&lt;/li&gt;
 &lt;li&gt;Set the &lt;strong&gt;Max age&lt;/strong&gt; to 24hrs and leave everything else alone. See below.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/stats.png&#34;
+	width=&#34;1150&#34;
+	height=&#34;1402&#34;
+	srcset=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/stats_hu_8bbd9dc9cb511f4a.png 480w, https://lennon101.github.io/p/storm-watch-dashboard/imgs/stats_hu_87b46f527f8c2f1d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Statistics Sensor&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;82&#34;
+		data-flex-basis=&#34;196px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;Now use this new statistics sensor in this yaml:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;graph&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;line&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;sensor&lt;/span&gt;
@@ -307,7 +346,20 @@ Fifteen hours is a long time to be out on your feet. Add cold winds, nearly 4000
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;icon&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;mdi:clock-time-nine-outline&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;The Column plot uses a custom integration called ApexCharts. Install it using &lt;strong&gt;HACS&lt;/strong&gt; then add the following yaml to your dashboard&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/daily-rain.png&#34;
+	width=&#34;948&#34;
+	height=&#34;1166&#34;
+	srcset=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/daily-rain_hu_81b34b218111030e.png 480w, https://lennon101.github.io/p/storm-watch-dashboard/imgs/daily-rain_hu_551be3eae2cb13b4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Daily Rain Column Plot&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;81&#34;
+		data-flex-basis=&#34;195px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;custom:apexcharts-card&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;graph_span&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;7d&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;:
@@ -338,7 +390,20 @@ Fifteen hours is a long time to be out on your feet. Add cold winds, nearly 4000
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;float_precision&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;For the Rain Event plot I used another custom integration called &lt;strong&gt;plotly-graph&lt;/strong&gt;. Again you get this from &lt;strong&gt;HACS&lt;/strong&gt;. The yaml is below.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/rain-event.png&#34;
+	width=&#34;938&#34;
+	height=&#34;1274&#34;
+	srcset=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/rain-event_hu_b500f04e448d28f5.png 480w, https://lennon101.github.io/p/storm-watch-dashboard/imgs/rain-event_hu_d7b86f60085e917c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Rain Event Plot&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;73&#34;
+		data-flex-basis=&#34;176px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;custom:plotly-graph&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;time_offset&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2h&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;entities&lt;/span&gt;:
@@ -367,7 +432,20 @@ Fifteen hours is a long time to be out on your feet. Add cold winds, nearly 4000
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;step&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;day&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;The card below was created using a combination of Mushroom Template and Mushroom Entity Cards. You can get the mushroom cards from HACS as well :)&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/rain-event-pt2.png&#34;
+	width=&#34;936&#34;
+	height=&#34;1278&#34;
+	srcset=&#34;https://lennon101.github.io/p/storm-watch-dashboard/imgs/rain-event-pt2_hu_81beb7e926282bd9.png 480w, https://lennon101.github.io/p/storm-watch-dashboard/imgs/rain-event-pt2_hu_86ce71187dbe47b2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Rain Event Totals&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;73&#34;
+		data-flex-basis=&#34;175px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;To get the details of when the rain event began and how long it has been going for, you&amp;rsquo;ll need to create three extra sensors. This is shown below. Unlike the other sensors, these are template sensors. Take note! For more information on these &lt;strong&gt;Trigger Based Template Sensors&lt;/strong&gt; see the official HA documentation here: &lt;a class=&#34;link&#34; href=&#34;https://www.home-assistant.io/integrations/template/#trigger-based-template-binary-sensors-buttons-images-numbers-selects-and-sensors&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Trigger Based Template Sensors&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;template&lt;/span&gt;:

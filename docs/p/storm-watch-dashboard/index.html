@@ -10,9 +10,10 @@
 <meta property='og:description' content="Home Assistant dashboard for real-time weather monitoring in Townsville using Ecowitt data, BOM radar, ApexCharts, Plotly, and Mushroom cards.">
 <meta property='og:url' content='https://lennon101.github.io/p/storm-watch-dashboard/'>
 <meta property='og:site_name' content='Lenno&#39;s Space'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Home Automation' /><meta property='article:published_time' content='2025-08-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-08-01T00:00:00&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Home Automation' /><meta property='article:published_time' content='2025-08-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-08-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://lennon101.github.io/p/storm-watch-dashboard/imgs/dashboard.png' />
 <meta name="twitter:title" content="Storm Watch Dashboard">
-<meta name="twitter:description" content="Home Assistant dashboard for real-time weather monitoring in Townsville using Ecowitt data, BOM radar, ApexCharts, Plotly, and Mushroom cards.">
+<meta name="twitter:description" content="Home Assistant dashboard for real-time weather monitoring in Townsville using Ecowitt data, BOM radar, ApexCharts, Plotly, and Mushroom cards."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://lennon101.github.io/p/storm-watch-dashboard/imgs/dashboard.png' />
     <link rel="shortcut icon" href="/avatar.png" />
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M1GT3H8EL"></script>
@@ -246,8 +247,20 @@
 
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/p/storm-watch-dashboard/">
+                <img src="/p/storm-watch-dashboard/imgs/dashboard_hu_61440629ba708c93.png"
+                        srcset="/p/storm-watch-dashboard/imgs/dashboard_hu_61440629ba708c93.png 800w, /p/storm-watch-dashboard/imgs/dashboard_hu_75020fd64b9feed.png 1600w"
+                        width="800" 
+                        height="399" 
+                        loading="lazy"
+                        alt="Featured image of post Storm Watch Dashboard" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -333,10 +346,36 @@
 </ul>
 <h2 id="home-assistant-setup">Home Assistant Setup
 </h2><p>This dashboard is built using Lovelace with a combination of built-in cards and custom integrations.</p>
-<!-- raw HTML omitted -->
+<p><img src="/p/storm-watch-dashboard/imgs/dashboard.png"
+	width="2886"
+	height="1440"
+	srcset="/p/storm-watch-dashboard/imgs/dashboard_hu_e78e46410f891ce8.png 480w, /p/storm-watch-dashboard/imgs/dashboard_hu_d1bffcc67ea1c7d.png 1024w"
+	loading="lazy"
+	
+		alt="Dashboard Overview"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="200"
+		data-flex-basis="481px"
+	
+></p>
 <hr>
 <p>Below is the yaml used to create this card:</p>
-<!-- raw HTML omitted -->
+<p><img src="/p/storm-watch-dashboard/imgs/daily-totals.png"
+	width="944"
+	height="1146"
+	srcset="/p/storm-watch-dashboard/imgs/daily-totals_hu_3f04434debae3db4.png 480w, /p/storm-watch-dashboard/imgs/daily-totals_hu_1f7f4e03b6b7f4e9.png 1024w"
+	loading="lazy"
+	
+		alt="Daily Rain"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="82"
+		data-flex-basis="197px"
+	
+></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">graph</span>: <span style="color:#ae81ff">line</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#ae81ff">sensor</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">entity</span>: <span style="color:#ae81ff">sensor.gw1100c_hourly_rain_rate</span>
@@ -350,7 +389,20 @@
 <li>Select the <strong>Change</strong> Statistics characters (calculates the delta between the newest and oldest data)</li>
 <li>Set the <strong>Max age</strong> to 24hrs and leave everything else alone. See below.</li>
 </ol>
-<!-- raw HTML omitted -->
+<p><img src="/p/storm-watch-dashboard/imgs/stats.png"
+	width="1150"
+	height="1402"
+	srcset="/p/storm-watch-dashboard/imgs/stats_hu_8bbd9dc9cb511f4a.png 480w, /p/storm-watch-dashboard/imgs/stats_hu_87b46f527f8c2f1d.png 1024w"
+	loading="lazy"
+	
+		alt="Statistics Sensor"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="82"
+		data-flex-basis="196px"
+	
+></p>
 <p>Now use this new statistics sensor in this yaml:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">graph</span>: <span style="color:#ae81ff">line</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#ae81ff">sensor</span>
@@ -360,7 +412,20 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:clock-time-nine-outline</span>
 </span></span></code></pre></div><hr>
 <p>The Column plot uses a custom integration called ApexCharts. Install it using <strong>HACS</strong> then add the following yaml to your dashboard</p>
-<!-- raw HTML omitted -->
+<p><img src="/p/storm-watch-dashboard/imgs/daily-rain.png"
+	width="948"
+	height="1166"
+	srcset="/p/storm-watch-dashboard/imgs/daily-rain_hu_81b34b218111030e.png 480w, /p/storm-watch-dashboard/imgs/daily-rain_hu_551be3eae2cb13b4.png 1024w"
+	loading="lazy"
+	
+		alt="Daily Rain Column Plot"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="81"
+		data-flex-basis="195px"
+	
+></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>      <span style="color:#f92672">type</span>: <span style="color:#ae81ff">custom:apexcharts-card</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">graph_span</span>: <span style="color:#ae81ff">7d</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">span</span>:
@@ -391,7 +456,20 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">float_precision</span>: <span style="color:#ae81ff">2</span>
 </span></span></code></pre></div><hr>
 <p>For the Rain Event plot I used another custom integration called <strong>plotly-graph</strong>. Again you get this from <strong>HACS</strong>. The yaml is below.</p>
-<!-- raw HTML omitted -->
+<p><img src="/p/storm-watch-dashboard/imgs/rain-event.png"
+	width="938"
+	height="1274"
+	srcset="/p/storm-watch-dashboard/imgs/rain-event_hu_b500f04e448d28f5.png 480w, /p/storm-watch-dashboard/imgs/rain-event_hu_d7b86f60085e917c.png 1024w"
+	loading="lazy"
+	
+		alt="Rain Event Plot"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="73"
+		data-flex-basis="176px"
+	
+></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#ae81ff">custom:plotly-graph</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">time_offset</span>: <span style="color:#ae81ff">2h</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">entities</span>:
@@ -420,7 +498,20 @@
 </span></span><span style="display:flex;"><span>          <span style="color:#f92672">step</span>: <span style="color:#ae81ff">day</span>
 </span></span></code></pre></div><hr>
 <p>The card below was created using a combination of Mushroom Template and Mushroom Entity Cards. You can get the mushroom cards from HACS as well :)</p>
-<!-- raw HTML omitted -->
+<p><img src="/p/storm-watch-dashboard/imgs/rain-event-pt2.png"
+	width="936"
+	height="1278"
+	srcset="/p/storm-watch-dashboard/imgs/rain-event-pt2_hu_81beb7e926282bd9.png 480w, /p/storm-watch-dashboard/imgs/rain-event-pt2_hu_86ce71187dbe47b2.png 1024w"
+	loading="lazy"
+	
+		alt="Rain Event Totals"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="73"
+		data-flex-basis="175px"
+	
+></p>
 <p>To get the details of when the rain event began and how long it has been going for, you&rsquo;ll need to create three extra sensors. This is shown below. Unlike the other sensors, these are template sensors. Take note! For more information on these <strong>Trigger Based Template Sensors</strong> see the official HA documentation here: <a class="link" href="https://www.home-assistant.io/integrations/template/#trigger-based-template-binary-sensors-buttons-images-numbers-selects-and-sensors"  target="_blank" rel="noopener"
     >Trigger Based Template Sensors</a></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">template</span>:
