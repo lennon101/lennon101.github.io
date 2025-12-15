@@ -1,10 +1,12 @@
 ---
 title: "Fixing Network Issues in Proxmox After Adding an NVMe SSD"
 description: "Diagnose and fix NIC renaming in Proxmox after installing an NVMe SSD on a Lenovo ThinkCentre M700, restoring OPNsense VM connectivity."
-date: 2025-02-12
+date: 2025-02-23
 categories: ["wiki"]
 tags: ["IT"]
 draft: false
+image: proxmox-dashboard.jpg
+
 ---
 
 # Fixing Network Issues in Proxmox After Adding an NVMe SSD

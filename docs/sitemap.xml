@@ -42,13 +42,16 @@
     <lastmod>2025-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lennon101.github.io/p/fixing-network-issues-in-proxmox-after-adding-an-nvme-ssd/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lennon101.github.io/tags/it/</loc>
-    <lastmod>2025-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lennon101.github.io/p/temp-rh-home-assistant-card/</loc>
     <lastmod>2024-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lennon101.github.io/p/migrating-grafana-sql-db-to-postgresdb/</loc>
+    <lastmod>2024-06-04T13:09:00+10:00</lastmod>
   </url><url>
     <loc>https://lennon101.github.io/p/proxmox-email-alerts-setup/</loc>
     <lastmod>2024-06-04T13:09:00+10:00</lastmod>
@@ -62,8 +65,11 @@
     <loc>https://lennon101.github.io/p/windows-10-search-bar-not-loading/</loc>
     <lastmod>2024-05-08T11:05:00+10:00</lastmod>
   </url><url>
-    <loc>https://lennon101.github.io/p/tuya-zigbee-valve-power-supply-conversion-a-step-by-step-guide/</loc>
+    <loc>https://lennon101.github.io/p/power-supply-conversion/</loc>
     <lastmod>2024-05-07T16:05:21+10:00</lastmod>
+  </url><url>
+    <loc>https://lennon101.github.io/p/shelly-devices-home-automation-scripts/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lennon101.github.io/archives/</loc>
   </url><url>
