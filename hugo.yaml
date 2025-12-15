@@ -51,6 +51,21 @@ params:
 
   comments:
     enabled: true
+    provider: giscus
+
+    giscus:
+      repo: lennon101/lennon101.github.io
+      repoID: R_kgDOL1Hm-w
+      category: General
+      categoryID: DIC_kwDOL1Hm-84CzzsW
+      mapping: pathname
+      strict: 0
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: bottom
+      lightTheme: preferred_color_scheme
+      darkTheme: preferred_color_scheme
+      lang: en
 
   widgets:
     homepage:
