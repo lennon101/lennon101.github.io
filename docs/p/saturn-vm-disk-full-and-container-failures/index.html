@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Journal &amp; Report: Saturn VM Disk Full and Container Failures\rDate: 2026-01-14\nVM Name: Saturn (VM-101)\nHost: Proxmox\nServices Affected: Home Assistant (HA), PostgreSQL, Plex Media Server\n1. Incident Overview\rWhile attempting to deploy the Home Assistant stack via Portainer, several failures occurred:\nHome Assistant could not start because PostgreSQL exited with:\nFATAL: could not write lock file &#34;postmaster.pid&#34;: No space left on device Plex Media Server crashed with SQLite disk I/O errors:\n">
+<title>Saturn VM Disk Full and Container Failures</title>
+
+<link rel='canonical' href='https://lennon101.github.io/p/saturn-vm-disk-full-and-container-failures/'>
+
+<link rel="stylesheet" href="/scss/style.min.4d36f8dc1fd48129e1635deb4b8eb2870fa09474f7280c4cb606d40b2526994b.css"><meta property='og:title' content="Saturn VM Disk Full and Container Failures">
+<meta property='og:description' content="Journal &amp; Report: Saturn VM Disk Full and Container Failures\rDate: 2026-01-14\nVM Name: Saturn (VM-101)\nHost: Proxmox\nServices Affected: Home Assistant (HA), PostgreSQL, Plex Media Server\n1. Incident Overview\rWhile attempting to deploy the Home Assistant stack via Portainer, several failures occurred:\nHome Assistant could not start because PostgreSQL exited with:\nFATAL: could not write lock file &#34;postmaster.pid&#34;: No space left on device Plex Media Server crashed with SQLite disk I/O errors:\n">
+<meta property='og:url' content='https://lennon101.github.io/p/saturn-vm-disk-full-and-container-failures/'>
+<meta property='og:site_name' content='Lenno&#39;s Space'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='IT' /><meta property='article:tag' content='Journal' /><meta property='article:published_time' content='2026-01-14T11:42:00&#43;10:00'/><meta property='article:modified_time' content='2026-01-14T11:42:00&#43;10:00'/>
+<meta name="twitter:title" content="Saturn VM Disk Full and Container Failures">
+<meta name="twitter:description" content="Journal &amp; Report: Saturn VM Disk Full and Container Failures\rDate: 2026-01-14\nVM Name: Saturn (VM-101)\nHost: Proxmox\nServices Affected: Home Assistant (HA), PostgreSQL, Plex Media Server\n1. Incident Overview\rWhile attempting to deploy the Home Assistant stack via Portainer, several failures occurred:\nHome Assistant could not start because PostgreSQL exited with:\nFATAL: could not write lock file &#34;postmaster.pid&#34;: No space left on device Plex Media Server crashed with SQLite disk I/O errors:\n">
+    <link rel="shortcut icon" href="/avatar.png" />
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M1GT3H8EL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4M1GT3H8EL');
+        }
+      </script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8cbd73845363a42c.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🤗</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Lenno&#39;s Space</a></h1>
+            <h2 class="site-description">A collection of personal blogs and technical guides</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-category-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 4h6v6h-6z" /><path d="M4 14h6v6h-6z" /><path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+                
+                <span>Categories</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-incident-overview">1. Incident Overview</a></li>
+    <li><a href="#2-investigation">2. Investigation</a></li>
+    <li><a href="#3-root-cause">3. Root Cause</a></li>
+    <li><a href="#4-resolution-steps">4. Resolution Steps</a>
+      <ul>
+        <li><a href="#step-1--resize-vm-disk-proxmox">Step 1 — Resize VM Disk (Proxmox)</a></li>
+        <li><a href="#step-2--resize-partition">Step 2 — Resize Partition</a></li>
+        <li><a href="#step-3--resize-physical-volume">Step 3 — Resize Physical Volume</a></li>
+        <li><a href="#step-4--extend-logical-volume">Step 4 — Extend Logical Volume</a></li>
+        <li><a href="#step-5--resize-filesystem">Step 5 — Resize Filesystem</a></li>
+        <li><a href="#step-6--increase-vm-memory">Step 6 — Increase VM Memory</a></li>
+        <li><a href="#step-7--restart-services">Step 7 — Restart Services</a></li>
+        <li><a href="#step-8--cleanup-optional">Step 8 — Cleanup (Optional)</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-outcome">5. Outcome</a></li>
+    <li><a href="#6-recommendations">6. Recommendations</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/blog/" >
+                Blog
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/saturn-vm-disk-full-and-container-failures/">Saturn VM Disk Full and Container Failures</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-01-14T11:42:00&#43;10:00'>Jan 14, 2026</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="journal--report-saturn-vm-disk-full-and-container-failures">Journal &amp; Report: Saturn VM Disk Full and Container Failures
+</h1><p><strong>Date:</strong> 2026-01-14<br>
+<strong>VM Name:</strong> Saturn (VM-101)<br>
+<strong>Host:</strong> Proxmox<br>
+<strong>Services Affected:</strong> Home Assistant (HA), PostgreSQL, Plex Media Server</p>
+<hr>
+<h2 id="1-incident-overview">1. Incident Overview
+</h2><p>While attempting to deploy the Home Assistant stack via Portainer, several failures occurred:</p>
+<ul>
+<li>
+<p>Home Assistant could not start because PostgreSQL exited with:</p>
+<pre tabindex="0"><code>FATAL: could not write lock file &#34;postmaster.pid&#34;: No space left on device
+</code></pre></li>
+<li>
+<p>Plex Media Server crashed with SQLite disk I/O errors:</p>
+<pre tabindex="0"><code>sqlite3_statement_backend::prepare: disk I/O error for SQL: PRAGMA cache_size=2048
+</code></pre></li>
+<li>
+<p>VM console showed Out of Memory errors.</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-investigation">2. Investigation
+</h2><p>Commands executed:</p>
+<pre tabindex="0"><code>df -h
+lsblk
+vgdisplay
+lvdisplay
+</code></pre><p>Findings:</p>
+<ul>
+<li>Root filesystem (<code>/</code>) was completely full.</li>
+<li>VM disk in Proxmox was 210 GB, but the Linux logical volume was only 148 GB.</li>
+<li>LVM volume group had no free extents initially.</li>
+<li>Disk exhaustion caused database corruption risks and service crashes.</li>
+</ul>
+<hr>
+<h2 id="3-root-cause">3. Root Cause
+</h2><ul>
+<li>Docker images, volumes, Home Assistant data, and Plex metadata filled the root filesystem.</li>
+<li>LVM logical volume was not expanded after increasing VM disk size.</li>
+<li>Insufficient memory exacerbated system instability.</li>
+</ul>
+<hr>
+<h2 id="4-resolution-steps">4. Resolution Steps
+</h2><h3 id="step-1--resize-vm-disk-proxmox">Step 1 — Resize VM Disk (Proxmox)
+</h3><p>Increased VM disk size from 170 GB to 210 GB.</p>
+<h3 id="step-2--resize-partition">Step 2 — Resize Partition
+</h3><pre tabindex="0"><code>sudo growpart /dev/sda 3
+</code></pre><h3 id="step-3--resize-physical-volume">Step 3 — Resize Physical Volume
+</h3><pre tabindex="0"><code>sudo pvresize /dev/sda3
+</code></pre><h3 id="step-4--extend-logical-volume">Step 4 — Extend Logical Volume
+</h3><pre tabindex="0"><code>sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+</code></pre><h3 id="step-5--resize-filesystem">Step 5 — Resize Filesystem
+</h3><pre tabindex="0"><code>sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
+</code></pre><h3 id="step-6--increase-vm-memory">Step 6 — Increase VM Memory
+</h3><p>Upgraded RAM from 4 GB to 8 GB.</p>
+<h3 id="step-7--restart-services">Step 7 — Restart Services
+</h3><p>Restarted PostgreSQL, Home Assistant, and Plex in dependency order.</p>
+<h3 id="step-8--cleanup-optional">Step 8 — Cleanup (Optional)
+</h3><pre tabindex="0"><code>docker system prune -a --volumes -f
+journalctl --vacuum-size=500M
+</code></pre><hr>
+<h2 id="5-outcome">5. Outcome
+</h2><ul>
+<li>Root filesystem expanded to ~205 GB.</li>
+<li>Over 100 GB of free space available.</li>
+<li>All services running normally.</li>
+<li>Disk and memory related failures resolved.</li>
+</ul>
+<hr>
+<h2 id="6-recommendations">6. Recommendations
+</h2><ul>
+<li>Move Docker and application data to NFS or dedicated storage.</li>
+<li>Monitor disk usage proactively.</li>
+<li>Always expand LVM after resizing VM disks.</li>
+<li>Maintain sufficient RAM headroom for Plex and HA workloads.</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/it/">IT</a>
+        
+            <a href="/tags/journal/">Journal</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/kosci100-journal/">
+        
+        
+            <div class="article-image">
+                <img src="/p/kosci100-journal/imgs/pt8-1.39b145d446f97f3930fb6feb94a3f0a7_hu_be4e9b2bbd959c07.JPEG" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Kosci100 Journal"
+                        
+                        data-hash="md5-ObFF1Eb5fzkw&#43;2/rlKPwpw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Kosci100 Journal</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/fixing-network-issues-in-proxmox-after-adding-an-nvme-ssd/">
+        
+        
+            <div class="article-image">
+                <img src="/p/fixing-network-issues-in-proxmox-after-adding-an-nvme-ssd/proxmox-dashboard.6dc6e38faf04b3e9b9f60cd2d615f750_hu_d0a793eb9faaed1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Fixing Network Issues in Proxmox After Adding an NVMe SSD"
+                        
+                        data-hash="md5-bcbjj68Es&#43;m59gzS1hX3UA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Fixing Network Issues in Proxmox After Adding an NVMe SSD</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/migrating-grafana-sql-db-to-postgresdb/">
+        
+        
+            <div class="article-image">
+                <img src="/p/migrating-grafana-sql-db-to-postgresdb/imgs/grafana-dashboard.acbe2deba8fb138f5d8347fedb43dc6e_hu_5c097a8479710d58.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Migrating Grafana SQL DB to PostgresDB"
+                        
+                        data-hash="md5-rL4t66j7E49dg0f&#43;20Pcbg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Migrating Grafana SQL DB to PostgresDB</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/proxmox-email-alerts-setup/">
+        
+        
+            <div class="article-image">
+                <img src="/p/proxmox-email-alerts-setup/cover.e6bbc94bbaba5ec617b25a6f3558a60a_hu_f500ab18afe56b1d.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Proxmox Email Alerts Setup"
+                        
+                        data-hash="md5-5rvJS7q6XsYXslpvNVimCg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Proxmox Email Alerts Setup</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/securing-your-nas-against-ransomware/">
+        
+        
+            <div class="article-image">
+                <img src="/p/securing-your-nas-against-ransomware/attack.f34c2dc613f2c7bb4b8d550f0166adc9_hu_d67b731b63bec0aa.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Securing Your Nas Against Ransomware"
+                        
+                        data-hash="md5-80wtxhPyx7tLjVUPAWatyQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Securing Your Nas Against Ransomware</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="lennon101/lennon101.github.io"
+    data-repo-id="R_kgDOL1Hm-w"
+    data-category="General"
+    data-category-id="DIC_kwDOL1Hm-84CzzsW"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('preferred_color_scheme');
+            } else {
+                setGiscusTheme('preferred_color_scheme');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2023 - 
+        
+        2026 Lenno&#39;s Space
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

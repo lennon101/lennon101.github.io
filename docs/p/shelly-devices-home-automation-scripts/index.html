@@ -19,7 +19,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M1GT3H8EL"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -73,7 +73,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_d32a202c6b6ce4d.png" width="300"
+                        <img src="/img/avatar_hu_8cbd73845363a42c.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -266,8 +266,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/shelly-devices-home-automation-scripts/">
-                <img src="/p/shelly-devices-home-automation-scripts/shelly-dashboard_hu_87da39fe5d0519fc.jpg"
-                        srcset="/p/shelly-devices-home-automation-scripts/shelly-dashboard_hu_87da39fe5d0519fc.jpg 800w, /p/shelly-devices-home-automation-scripts/shelly-dashboard_hu_26bba74a2307fa69.jpg 1600w"
+                <img src="/p/shelly-devices-home-automation-scripts/shelly-dashboard_hu_90f4599d8b5c8792.jpg"
+                        srcset="/p/shelly-devices-home-automation-scripts/shelly-dashboard_hu_90f4599d8b5c8792.jpg 800w, /p/shelly-devices-home-automation-scripts/shelly-dashboard_hu_29106fbbacb54dc5.jpg 1600w"
                         width="800" 
                         height="420" 
                         loading="lazy"
@@ -379,14 +379,14 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;https://us-central1-5tkroniexa-uc.a.run.app/ping&#34;</span>,
 </span></span><span style="display:flex;"><span>  ],
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//number of failures that trigger the reset
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">numberOfFails</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">numberOfFails</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//time in seconds after which the http request is considered failed
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">httpTimeout</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">httpTimeout</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//time in seconds for the relay to be off
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">toggleTime</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span>,
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">toggleTime</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//time in seconds to retry a &#34;ping&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">pingTime</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">120</span>, <span style="color:#75715e">// 120s = 2mins 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pingTime</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">120</span>, <span style="color:#75715e">// 120s = 2mins 
+</span></span></span><span style="display:flex;"><span>};
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">endpointIdx</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">failCounter</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
@@ -394,7 +394,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">restartRelay</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Self- reboot
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">Shelly</span>.<span style="color:#a6e22e">call</span>(
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Shelly</span>.<span style="color:#a6e22e">call</span>(
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Shelly.Reboot&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">null</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">code</span>, <span style="color:#a6e22e">msg</span>, <span style="color:#a6e22e">ud</span>) {
@@ -409,7 +409,7 @@
 </span></span><span style="display:flex;"><span>    { <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CONFIG</span>.<span style="color:#a6e22e">endpoints</span>[<span style="color:#a6e22e">endpointIdx</span>], <span style="color:#a6e22e">timeout</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CONFIG</span>.<span style="color:#a6e22e">httpTimeout</span> },
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">response</span>, <span style="color:#a6e22e">error_code</span>, <span style="color:#a6e22e">error_message</span>) {
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">//http timeout, magic number, not yet documented
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error_code</span> <span style="color:#f92672">===</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">114</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">error_code</span> <span style="color:#f92672">===</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">104</span>) {
+</span></span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error_code</span> <span style="color:#f92672">===</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">114</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">error_code</span> <span style="color:#f92672">===</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">104</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Failed to fetch &#34;</span>, <span style="color:#a6e22e">CONFIG</span>.<span style="color:#a6e22e">endpoints</span>[<span style="color:#a6e22e">endpointIdx</span>]);
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">failCounter</span><span style="color:#f92672">++</span>;
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Rotating through endpoints&#34;</span>);
@@ -436,17 +436,17 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Shelly</span>.<span style="color:#a6e22e">addStatusHandler</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">status</span>) {
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//is the component a switch
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;switch&#34;</span>) <span style="color:#66d9ef">return</span>;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;switch&#34;</span>) <span style="color:#66d9ef">return</span>;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//is it the one with id 0
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">!==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span>;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">!==</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span>;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//does it have a delta.source property
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">delta</span>.<span style="color:#a6e22e">source</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;undefined&#34;</span>) <span style="color:#66d9ef">return</span>;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">delta</span>.<span style="color:#a6e22e">source</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;undefined&#34;</span>) <span style="color:#66d9ef">return</span>;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//is the source a timer
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">delta</span>.<span style="color:#a6e22e">source</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;timer&#34;</span>) <span style="color:#66d9ef">return</span>;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">delta</span>.<span style="color:#a6e22e">source</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#34;timer&#34;</span>) <span style="color:#66d9ef">return</span>;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//is it turned on
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">delta</span>.<span style="color:#a6e22e">output</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">true</span>) <span style="color:#66d9ef">return</span>;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">status</span>.<span style="color:#a6e22e">delta</span>.<span style="color:#a6e22e">output</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">true</span>) <span style="color:#66d9ef">return</span>;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//start the loop to ping the endpoints again
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">pingTimer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Timer</span>.<span style="color:#a6e22e">set</span>(<span style="color:#a6e22e">CONFIG</span>.<span style="color:#a6e22e">pingTime</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>, <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">pingEndpoints</span>);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pingTimer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Timer</span>.<span style="color:#a6e22e">set</span>(<span style="color:#a6e22e">CONFIG</span>.<span style="color:#a6e22e">pingTime</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>, <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">pingEndpoints</span>);
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><h3 id="step-3-save-and-enable">Step 3: Save and Enable
 </h3><ol>
@@ -472,9 +472,9 @@
 <h2 id="configuration">Configuration
 </h2><p>Edit the configuration variables in each script to match your environment:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Example configuration section
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PING_URL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.google.com&#34;</span>;
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PING_URL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.google.com&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">CHECK_INTERVAL</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>; <span style="color:#75715e">// Check every 5 minutes
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">REBOOT_DELAY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>; <span style="color:#75715e">// Wait 10 seconds before reboot
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">REBOOT_DELAY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>; <span style="color:#75715e">// Wait 10 seconds before reboot
 </span></span></span></code></pre></div><h2 id="troubleshooting">Troubleshooting
 </h2><ul>
 <li><strong>Script not running</strong>: Verify the script is enabled in the Shelly web interface</li>
@@ -584,7 +584,7 @@
         
             2023 - 
         
-        2025 Lenno&#39;s Space
+        2026 Lenno&#39;s Space
     </section>
     
     <section class="powerby">
